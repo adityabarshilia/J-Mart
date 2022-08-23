@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section{
+            display: grid;
+            margin-top: 20px;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        section>div{
+            height: 200px;
+        }
+        section>div:nth-child(1){
+            background-color: red;
+        }
+
+        section>div:nth-child(2){
+            background-color: green;
+        }
+        section>div:nth-child(3){
+            background-color: yellow;
+        }
+        section>div:nth-child(4){
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <section>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </section>
+    
+    </div>
+</body>
+</html>
