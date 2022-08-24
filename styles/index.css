@@ -1,0 +1,481 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 112px;
+    background-color: aliceblue;
+    z-index: 10;
+}
+
+.upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    background-color: #008ECC;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13.5px;
+    font-weight: 600;
+    width: 100%;
+    height: 40px;
+    background-color: #ECECED;
+    line-height: 20px;
+    gap: 90px;
+}
+
+#burger {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/burger_menu.svg) center no-repeat;
+    background-size: 100%;
+}
+
+#logo {
+    width: 110px;
+    height: 36.7px;
+    cursor: pointer;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/jiomart_logo_beta.svg) center no-repeat;
+    background-size: 100%;
+}
+
+#searchdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+#search {
+    width: 650px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+#searchburger {
+    display: block;
+    height: 24px;
+    width: 24px;
+    color: #fff;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/list-view.svg) center no-repeat;
+}
+
+#accdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 5px;
+}
+
+#account {
+    white-space: nowrap;
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/profile.svg) center no-repeat;
+    background-size: 100%;
+    background-color: #008ECC;
+    padding-left: 25px;
+    line-height: 24px;
+}
+
+#cartdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 5px;
+}
+
+#cart {
+    white-space: nowrap;
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/cart.svg) center no-repeat;
+    background-size: 100%;
+    background-color: #008ECC;
+    padding-left: 25px;
+    line-height: 24px;
+}
+
+#cart_counter {
+    display: block;
+    position: relative;
+    left: -50px;
+    top: -6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+}
+
+#location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1.2px;
+    gap: 7px;
+}
+
+#location_logo {
+    display: block;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/location-on.svg) center no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+}
+
+.down_arrow {
+    display: block;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/chevron-down.svg) center no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+}
+
+#deltext {
+    color: #767676;
+}
+
+.bottom_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#carousel1 {
+    width: 100%;
+    height: 320px;
+    margin-top: 130px;
+}
+
+.imgs {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgs_nc {
+    width: 100%;
+    height: 100%;
+}
+
+
+#imgbanners {
+    width: 97.5%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.banner1 {
+    width: 100%;
+    height: 209px;
+}
+
+.banner2 {
+    width: 100%;
+    height: 255px;
+}
+
+.banner3 {
+    width: 100%;
+    height: 300px;
+}
+
+.banner4 {
+    width: 97.5%;
+    margin: auto;
+    height: 180px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin: 15px 0 30px 65px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#slider1 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#slider1 div {
+    width: 180px;
+    height: 226px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#slider1 div:hover {
+    transform: scale(1.05);
+}
+
+#slider2 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#slider2 div {
+    width: 200px;
+    height: 230px;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+
+#slider2 div img {
+    padding: 10px 15px;
+    height: 180px;
+    transition: all .2s ease-in-out;
+}
+
+#slider2 div img:hover {
+    transform: scale(1.05);
+}
+
+#slider2 div p {
+    padding: 10px 0;
+}
+
+#top_deals,
+#recommended {
+    width: 95%;
+    height: 314px;
+    border: 1px solid;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#carousel2 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 25px;
+}
+
+#carousel2 div {
+    width: 50%;
+}
+
+#offers_de {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 260px);
+    margin-bottom: 30px;
+}
+
+#offers_de>div {
+    width: 100%;
+    height: 100%;
+    background-color: #EFD6DA;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#offers_de>div:hover {
+    box-shadow: 5px 5px 8px #888;
+}
+
+#offers_de>div span {
+    display: block;
+    width: 50%;
+    margin: auto;
+    height: 30px;
+    background-color: #ED1F1F;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    line-height: 30px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#offers_de>div>div {
+    margin: auto;
+    margin-top: 10px;
+    width: 160px;
+    height: 150px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#offers_de>div>div:hover {
+    transform: scale(1.05);
+}
+
+#upper_women,
+#upper_men {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#upper_women div,
+#upper_men div {
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#upper_women div img,
+#upper_men div img {
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+#upper_women div img:hover,
+#upper_men div img:hover {
+    transform: scale(1.05);
+}
+
+#lower_women,
+#lower_men {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    gap: 25px;
+}
+
+#lower_women div,
+#lower_men div {
+    width: 18%;
+    height: 330px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+
+#lower_women div img,
+#lower_men div img {
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+#lower_women div img:hover,
+#lower_men div img:hover {
+    transform: scale(1.05);
+}
+
+#footer_container{
+    background-color: #EDEDEF;
+}
+
+#footer_container a {
+    text-decoration: none;
+    color: #008ECC;
+}
+
+#footer{
+    margin: auto;
+    height: 419px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 12px;
+    gap: 50px;
+}
+
+#footer ul, #footer p{
+    list-style: none;
+    color: #616162;
+}
+
+#footer p{
+    margin-bottom: 10px;
+}
+
+ul{
+    line-height: 22px;
+}
+
+h5{
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+#footer > div:nth-child(1){
+    width: 178px;
+    margin-top: 50px;
+}
+
+#footer > div:nth-child(2){
+    width: 165px;
+    margin-top: 50px;
+}
+#footer > div:nth-child(3){
+    width: 300px;
+    margin-top: 50px;
+    border-left: 1px solid gray;
+    padding: 0 25px;
+}
+
+#dapp{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#f_bottom{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid rgb(204, 202, 202);
+    font-size: 12px;
+}
