@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        let data = JSON.parse(localStorage.getItem("check")) || null;
+        if(data == null){
+            location.href = "index.html";
+        }
+    </script>
     <link rel="stylesheet" href="style/inner-section.css">
     <script src="https://kit.fontawesome.com/78e4e5cdc7.js" crossorigin="anonymous"></script>
 </head>
@@ -24,7 +30,7 @@
                         <i class="fa-solid fa-angle-right"></i>
                     </li>
                     <li>
-                        <a href="">Orange Imported 1 kg</a>
+                        <a href="" id="link">Orange Imported 1 kg</a>
                         <i class="fa-solid fa-angle-right"></i>
                     </li>
                 </ul>
@@ -43,7 +49,7 @@
                     <h1>Orange Imported 1 kg</h1>
                     <p class="brand-name">PRIVATE LABEL</p>
                     <div class="price-and-taxes"> 
-                        <p>M.R.P: &#8377; <span>199.00</span></p> 
+                        <p>M.R.P: &#8377; <span id="rs">199.00</span></p> 
                         <p>Inclusive of all taxes</p>
                         <i class="fa-solid fa-heart"></i>
                     </div>
@@ -64,7 +70,7 @@
                         <i class="fa-solid fa-location-dot location-logo"></i>
                         <p class="check">CHECK</p>
                     </div>
-                    <h1 class="available-Offers">Available Offers <span>11</span></h1>
+                    <h1 class="available-Offers">Available Offers <span>1</span></h1>
                     <!-- // Slider-Cards-Offer -->
                     <div class="slider-card-offer">
                         <img src="https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/left_arrow.svg" alt="">
@@ -94,8 +100,8 @@
 
             <div class="inner-description">
                 <h1>Description</h1>
-                <h2>Orange Imported 1 kg</h2>
-                <p>Oranges are a favourite snack for many people. They can be eaten out-of-hand or used as a garnish. Besides orange juices, which are very popular worldwide, there are many other culinary uses of oranges. Oranges can be made into jams, marmalades, and preserves with the addition of sugar. They may also be used in salads, desserts, ice creams, sorbets, and savoury dishes. So, go ahead,</p>
+                <h2 id="title">Orange Imported 1 kg</h2>
+                <p id="description">Oranges are a favourite snack for many people. They can be eaten out-of-hand or used as a garnish. Besides orange juices, which are very popular worldwide, there are many other culinary uses of oranges. Oranges can be made into jams, marmalades, and preserves with the addition of sugar. They may also be used in salads, desserts, ice creams, sorbets, and savoury dishes. So, go ahead,</p>
                 <p class="more2">SEE MORE</p>
             </div>
 
@@ -138,9 +144,9 @@
                 <div class="rating-box">
                     <div class="star">
                         <div class="rating-value">
-                            <h1><span>0</span>/5</h1>
+                            <h1><span id="ratingCount">0</span>/5</h1>
                             <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            <p>Based on 0 Ratings</p>
+                            <p>Based on <span id="basedon">0</span> Ratings</p>
                         </div>
                             <ul>
                                 <li>5 <i class="fa-solid fa-star"></i> <div class="line"></div> <span class="per">0%</span></li>
@@ -167,3 +173,4 @@
     <footer></footer>
 </body>
 </html>
+<script src="scripts/inner-section.js"></script>
