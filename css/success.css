@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f7;
+}
+
+#header {
+    background: #008ECC;
+    padding: 15px 0px 15px 10%;
+    margin: -8px;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+}
+
+#container p {
+    color: #666666;
+}
+
+#container h2 {
+    margin-top: 30px;
+    color: #008ECC;
+}
+
+/* ---------------------- */
+
+#container-box {
+    display: flex;
+}
+
+#container-box p {
+    color: gray;
+}
+
+#leftbox-items {
+    width: 60%;
+}
+
+#user-details {
+    /* width: 55%; */
+    background: #fff;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 17px 40px 15px;
+    border-radius: 4px;
+}
+
+#user-details>h3 {
+    margin-bottom: 0;
+}
+
+#user-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+
+}
+
+#user-information>div>h5 {
+    margin-bottom: 0;
+}
+
+
+#btnOrder {
+    width: 73%;
+    margin-left: 16%;
+    margin-top: 18%;
+    padding: 15px 6px;
+    color: #fff;
+    font-size: 18px;
+    background: #008ecc;
+    border-radius: 4px;
+    border: none;
+
+}
+
+
+/* ------------------- */
+
+
+#rightbox-items {
+    /* border: 1px solid goldenrod; */
+    width: 45%;
+}
+
+.Payment-box {
+    margin: 8px 0px 15px 23px;
+    width: 95%;
+    position: sticky;
+    top: 10px;
+
+}
+
+
+#payment-detials {
+    background: #fff;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 17px 40px 15px;
+    border-radius: 4px;
+}
+
+
+#payment-detials label {
+
+    font-size: 14px;
+    color: rgba(0, 0, 0, .5);
+    line-height: 24px;
+}
+
+#payment-detials>div:nth-child(4) {
+    font-weight: bold;
+
+}
+
+
+#payment-detials>div:nth-child(5) label {
+    float: right;
+    color: #00a100;
+    margin-top: 10px;
+}
+
+.span-right {
+    float: right;
+}
