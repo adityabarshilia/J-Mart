@@ -6,102 +6,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="upper">
-            <div id="burger"></div>
-            <div id="logo"></div>
-            <div id="searchdiv"><input type="text" id="search"
-                    placeholder="Search essentials, groceries, and more ..."><span id="searchburger"></span></div>
-            <div id="accdiv"><span id="account"></span id="acctext"><span>Sign in / Sign up</span></div>
-            <div id="cartdiv"><span id="cart"></span id="carttext"><span>Cart</span><span id="cart_counter">3</span>
+    <div class="header"></div>
+
+    <div class="s_container">
+        <div class="s_header">
+            <div class="s_upper">
+                <div><img class="imgs" src="https://www.jiomart.com/assets/version1661356103/smartweb/images/icons/my-account.svg" alt=""></div>
+                <p style="margin: 0; margin-left: -200px">Hello</p>
+                <i class="fa-solid fa-xmark myicon"></i>
+            </div>
+            <div class="s_lower">
+                <a href="">Account</a>
+                <a href="">Orders</a>
             </div>
         </div>
-        <div class="lower">
-            <div id="location">
-                <span id="location_logo"></span>
-                <div>
-                    <p id="deltext">Deliver to</p>
-                    <p>123123</p>
-                </div>
-            </div>
-            <div id="one" class="bottom_links"><span>Groceries</span><span class="down_arrow"></span>
-                <div id="d1" class="ddown">
-                    <div>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                    </div>
-                    <div>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                    </div>
-                </div>
-            </div>
 
-            <div id="two" class="bottom_links"><span>Home & Kitchen</span><span class="down_arrow"></span>
-                <div id="d2" class="ddown">
-                    <div>
-                        <a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                            href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                            href="">asd</a><a href="">asd</a><a href="">asd</a>
-                    </div>
-                    <div>
-                        <a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                            href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                            href="">asd</a><a href="">asd</a>
-                    </div>
-                </div>
-            </div>
-            <div id="three" class="bottom_links"><span>Fashion</span><span class="down_arrow"></span>
-                <div id="d3" class="ddown">
-                    <div>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                    </div>
-                    <div>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                        <a href="">asd</a>
-                    </div>
-                </div>
-            </div>
-            <div id="four" class="bottom_links"><span>Electronics</span><span class="down_arrow"></span>
-                <div id="d4" class="ddown">
-                    <a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                        href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                        href="">asd</a><a href="">asd</a>
-                </div>
-            </div>
-            <div id="five" class="bottom_links"><span>Beauty</span><span class="down_arrow"></span>
-                <div id="d5" class="ddown">
-                    <a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                        href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                        href="">asd</a><a href="">asd</a>
-                </div>
-            </div>
-            <div id="six" class="bottom_links"><span>Jewellery</span><span class="down_arrow"></span>
-                <div id="d6" class="ddown">
-                    <a href="">asd</a>
-                </div>
-            </div>
+        <div class="s_list">
+            <ul>
+                <li>Home</li>
+                <li>Shop By Category</li>
+                <li>My list</li>
+                <li>jioMart Wallet</li>
+                <li>JioMart Gift Store</li>
+                <li>JioMart Gift card</li>
+                <li>GoGreen With JioMart</li>
+                <li>All Offers</li>
+
+                <div class="line"></div>
+
+                <li>My Account</li>
+                <li>Need Help</li>
+                <li>About Us</li>
+                <li>Guide</li>
+
+                <div class="line"></div>
+
+                <h5>CONTACT US</h5>
+                <p>WhatsApp us : <a
+                        href="https://api.whatsapp.com/send/?phone=917000370003&text=Hi&type=phone_number&app_absent=0">70003
+                        70003</a></p>
+                <p>Call Us : <a href="tel:1800 890 1222">1800 890 1222</a></p>
+                <p> 8:00 AM to 8:00 PM, 365 days</p>
+                <p>Please note that you are accessing the BETA Version of <a href="www.jiomart.com">www.jiomart.com</a>
+                </p>
+                <p>Should you encounter any bugs, glitches, lack of functionality, delayed deliveries, billing errors or
+                    other problems on the beta website, please email us on <a href="cs@jiomart.com">cs@jiomart.com</a>
+                </p>
+
+                <h5 id="dapp">DOWNLOAD APP</h5>
+                <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/play_store.png" alt="">
+                <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/ios_store.png" alt="">
+            </ul>
         </div>
     </div>
 
-    <div id="carousel1">
+    <!-- <div id="myCarousel">
         <img class="imgs"
             src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1661275491_Pasta-and-Maccoroni_1680x320.jpg"
             alt="">
+    </div> -->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        
+        <ol class="carousel-indicators" style="z-index: 5;">
+            <li style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;" data-target="#myCarousel" data-slide-to="1"></li>
+            <li style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;" data-target="#myCarousel" data-slide-to="2"></li>
+            <li style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;" data-target="#myCarousel" data-slide-to="3"></li>
+            <li style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;" data-target="#myCarousel" data-slide-to="4"></li>
+            <li style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;" data-target="#myCarousel" data-slide-to="5"></li>
+            <li style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;" data-target="#myCarousel" data-slide-to="6"></li>
+            <li style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;" data-target="#myCarousel" data-slide-to="7"></li>
+            <li style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;" data-target="#myCarousel" data-slide-to="8"></li>
+        </ol>
+
+       
+        <div class="carousel-inner imgs">
+            <div class="item active imgs">
+                <img style="height:100%; object-fit: cover;" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1661275491_Pasta-and-Maccoroni_1680x320.jpg" alt="">
+            </div>
+
+            <div class="item imgs">
+                <img style="height:100%; object-fit: cover;" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1661273643_Desktop-Hair-Care.jpg"
+                    alt="">
+            </div>
+
+            <div class="item imgs">
+                <img style="height:100%; object-fit: cover;" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1661272279_Breakfast-Mela_2-_1680_320.jpg"
+                    alt="">
+            </div>
+
+            <div class="item imgs">
+                <img style="height:100%; object-fit: cover;" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1661273992_1661269458_Whole-Spices_1680x320.jpg"
+                    alt="">
+            </div>
+
+
+            <div class="item imgs">
+                <img style="height:100%; object-fit: cover;" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1661341026_NCR.jpg"
+                    alt="">
+            </div>
+
+            <div class="item imgs">
+                <img style="height:100%; object-fit: cover;" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1661351432_1661111914_1660913734_1660747160_Beauty-Store_Main-Banner_1680x320_ANB.jpg"
+                    alt="">
+            </div>
+
+            <div class="item imgs">
+                <img style="height:100%; object-fit: cover;" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1661351705_1661275848_Audio-Fest-JioMart-Carousel-Banner-23_08_2022.jpg"
+                    alt="">
+            </div>
+
+
+            <div class="item imgs">
+                <img style="height:100%; object-fit: cover;" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1661351939_1661197950_Aug-20_banner-3_web.jpg"
+                    alt="">
+            </div>
+
+            <div class="item imgs">
+                <img style="height:100%; object-fit: cover;" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1661359792_1660743726_Oil--Ghee_1680-x-320_new_web.jpg"
+                    alt="">
+            </div>
+
+        </div>
+    </div>
+    
+    <a id="lc" class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a id="rc" class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
     </div>
 
     <div id="imgbanners">
@@ -118,7 +163,8 @@
     <h2>Shop from Top Categories</h2>
 
     <div id="slider1">
-        <div><img class="imgs" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109073_1654018509_Fruits-Veg.jpg" alt="">
+        <div><img class="imgs"
+                src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109073_1654018509_Fruits-Veg.jpg" alt="">
         </div>
         <div><img class="imgs"
                 src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109088_1654018530_Beverage-Corner.jpg"
@@ -277,58 +323,10 @@
                 alt=""></div>
     </div>
 
-    <div id="footer_container">
-        <div id="footer">
-            <div>
-                <h5>MOST POPULAR CATEGORIES</h5>
-                <ul>
-                    <li>Staples</li>
-                    <li>Beverages</li>
-                    <li>Personal Care</li>
-                    <li>Home Care</li>
-                    <li>Fruits and Vegetables</li>
-                    <li>Baby Care</li>
-                    <li>Snacks & Branded Foods</li>
-                    <li>Dairy & Bakery</li>
-                </ul>
-            </div>
-            <div>
-                <h5>CUSTOMER SERVICES</h5>
-                <ul>
-                    <li>About Us</li>
-                    <li>FAQ</li>
-                    <li>Terms and conditions</li>
-                    <li>Privacy policy</li>
-                    <li>E-waste Policy</li>
-                    <li>Cancellation and return policy</li>
-                </ul>
-            </div>
-
-            <div>
-                <h5>CONTACT US</h5>
-                <p>WhatsApp us : <a
-                        href="https://api.whatsapp.com/send/?phone=917000370003&text=Hi&type=phone_number&app_absent=0">70003
-                        70003</a></p>
-                <p>Call Us : <a href="tel:1800 890 1222">1800 890 1222</a></p>
-                <p> 8:00 AM to 8:00 PM, 365 days</p>
-                <p>Please note that you are accessing the BETA Version of <a href="www.jiomart.com">www.jiomart.com</a>
-                </p>
-                <p>Should you encounter any bugs, glitches, lack of functionality, delayed deliveries, billing errors or
-                    other problems on the beta website, please email us on <a href="cs@jiomart.com">cs@jiomart.com</a>
-                </p>
-
-                <h5 id="dapp">DOWNLOAD APP</h5>
-                <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/play_store.png" alt="">
-                <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/ios_store.png" alt="">
-            </div>
-        </div>
-
-        <div id="f_bottom">
-            <p>Best viewed on Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+, Google Chrome 80+</p>
-            <p>© 2022 All rights reserved. Reliance Retail Ltd.</p>
-        </div>
-    </div>
+    <div id="footer_container"></div>
 
 </body>
 
 </html>
+
+<script src="scripts/index.js" type="module"></script>

@@ -6,6 +6,7 @@
 }
 
 .header {
+    display: none;
     position: fixed;
     top: 0;
     width: 100%;
@@ -233,8 +234,9 @@
     top: -6px;
     width: 14px;
     height: 14px;
+    line-height: 14px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #DD0608;
     color: white;
     font-size: 11px;
     text-align: center;
@@ -254,6 +256,11 @@
     width: 24px;
     height: 24px;
     background-size: 100%;
+}
+
+#location div p {
+    margin: 0;
+    padding: 0;
 }
 
 .down_arrow {
@@ -276,10 +283,10 @@
     height: 100%;
 }
 
-#carousel1 {
+#myCarousel {
     width: 100%;
     height: 320px;
-    margin-top: 130px;
+    /* margin-top: 130px; */
 }
 
 .imgs {
@@ -588,4 +595,74 @@ h5 {
     padding: 10px 0;
     border-top: 1px solid rgb(204, 202, 202);
     font-size: 12px;
+}
+
+.s_container{
+    width: 0px;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: white;
+    overflow-x: scroll;
+    transition: all .25s ease-in-out;
+}
+
+.s_header{
+    background-color: #008ECC;
+    padding: 10px;
+}
+
+.myicon{
+    color: white;
+    display: block;
+    cursor: pointer;
+}
+
+.s_upper{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.s_upper > div:nth-child(1){
+    width: 27px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.s_lower{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.s_lower a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 45%;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.s_list{
+    padding: 15px;
+}
+
+.s_list li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.line{
+    height: 3px;
+    background-color: #616162;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
