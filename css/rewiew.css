@@ -1,0 +1,233 @@
+#header {
+    background: #008ECC;
+    padding: 15px 0px 15px 10%;
+    margin: -8px;
+}
+
+
+
+body {
+    background: #f6f6f7;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+
+    /* border: 1px solid black; */
+}
+
+.card-title {
+    /* border: 1px solid blue; */
+    /* display: grid; */
+    display: flex;
+    align-items: center;
+
+}
+
+
+#order-status {
+    /* border: 1px solid goldenrod; */
+    height: 50px;
+    margin: 3px 0px;
+    padding-bottom: 17px;
+    display: flex;
+    flex-grow: 5;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+#order-status li {
+    display: flex;
+    float: left;
+    list-style: none;
+    margin: 5px 40px;
+    align-items: center;
+
+}
+
+
+/* container-items */
+.container-boxleft {
+
+    display: flex;
+}
+
+.cart-product-name {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+
+
+.card-productlist {
+    background: #ffff;
+    width: 97%;
+    padding: 10px;
+
+}
+
+.product-itemsdetails {
+    display: flex;
+
+    /* border: 1px solid blue; */
+
+}
+
+.product-img {
+    margin: 15px 0px 50px 19px;
+    align-self: center;
+    width: auto;
+}
+
+.product-itemsName {
+    /* border: 1px solid green; */
+    width: 100%;
+    margin: 0 0 0px 20px;
+    padding: 20px;
+}
+
+
+.product-itemsPrice span {
+    margin: 8px;
+}
+
+
+
+#mrp-price {
+    font-size: 14px;
+    color: rgba(0, 0, 0, .5);
+    text-decoration: line-through;
+    padding: 0 2px 0 0;
+}
+
+#save-price {
+    font-size: 14px;
+    color: #00a100;
+    line-height: 20px;
+}
+
+
+#container-boxRight {
+    width: 45%;
+}
+
+.Payment-box {
+    margin: 8px 0px 15px 23px;
+    width: 95%;
+    position: sticky;
+    top: 10px;
+
+
+}
+
+#payment-detials {
+    background: #fff;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 17px 40px 15px;
+    border-radius: 4px;
+}
+
+#payment-detials label {
+
+    font-size: 14px;
+    color: rgba(0, 0, 0, .5);
+    line-height: 24px;
+}
+
+#payment-detials>div:nth-child(4) {
+    font-weight: bold;
+
+}
+
+#payment-detials>div:nth-child(5) label {
+    float: right;
+    color: #00a100;
+    margin-top: 10px;
+}
+
+#btn-checkout {
+    float: right;
+    width: 50%;
+    padding: 10px 6px;
+    color: #fff;
+    background: #008ecc;
+    border-radius: 4px;
+    border: none;
+}
+
+.span-right {
+    float: right;
+}
+
+#btn-checkout:hover {
+    cursor: pointer;
+}
+
+#address-deatils {
+    background: #ffff;
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+
+
+form {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#address-btn {
+    width: 50%;
+    margin-left: 50%;
+    padding: 10px 6px;
+    color: #fff;
+    background: #008ecc;
+    border-radius: 4px;
+    border: none;
+
+}
+
+#address-btn:hover {
+    cursor: pointer
+}
+
+.totalItems {
+
+    color: gray;
+}
+
+#qtyBox {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+
+#whatsapp-alart {
+    /* position: sticky; */
+    top: 10px;
+    bottom: 10px;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+#whatsapp-alart input {
+    width: 20px;
+
+}
+
+#topHr {
+    margin-left: 40px;
+    margin-right: 30px;
+}
