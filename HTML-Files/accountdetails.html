@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +9,10 @@
     <link rel="icon" href="https://www.jiomart.com/msassets/favicon.svg?v2"  >
     <title>Buy Grocery Online at Best Prices Pan India</title>
     <link rel="stylesheet" href="../styles/accountdetais.css">
+    <link rel="stylesheet" href="../styles/edit.css">
 </head>
-<body>
+
+<body class="body">
     <h1>My Account</h1>
     <div class="box">
         <div class="name-detail-section">
@@ -42,7 +46,10 @@
         <div class="account-information">
             <div class="account-information-upper">
                 <p id="heading">Account Information</p>
-                <a href="edit.html" id="term">Edit</a>
+
+                <button id="term" onclick="show()">Edit</button>
+                <!-- <a href="#" >Edit</a> -->
+
             </div>
             <div class="customer-details">
                 <div>
@@ -93,5 +100,61 @@
         </div>
         <p class="endp">Due to current situation we are witnessing a huge surge in calls/ e-mails. There may be a delay in response from our side. Kindly bear with us.</p>
     </div>
+
+
+    <div class="edit-modal">
+        
+         <div class="edit">
+            <div class="cross-red">
+                <button class="color-red-cross" onclick="cl()"><img src="https://www.jiomart.com/msassets/images/icons/close_red.svg" alt=""></button>
+            </div>
+            <div class="customer-form">
+                <p class="edit-profile">EDIT PROFILE</p>
+                <form action="#">
+                    <label for="#">FIRST NAME</label>
+                    <input type="text" id="" placeholder="Customer first name">
+                    <label for="#">LAST NAME</label>
+                    <input type="text" id="" placeholder="Customer last name">
+                   
+                    <div class="box1">
+                        <div class="genderbox">
+                            <label for="">GENDER</label>
+                            <select name="gender" id="gender">
+                                <option value="#">Male</option>
+                                <option value="#">Female</option>
+                                <option value="#">Others</option>
+                                <option value="#">Unspecified</option>
+                            </select>
+                        </div>
+                        <div class="dob_box">
+                            <label for="">DATE OF BIRTH</label>
+                            <input id="dob" type="date">
+                        </div>
+                    </div>
+                    <label for="#">EMAIL ID</label>
+                    <input type="email" name="" id="" placeholder="Customer email id">
+                    <label for="#">MOBILE NO</label>
+                    <input type="number" name="" id="" placeholder="Customer mobile no">
+                    <button type="submit" id="submit">Save Changes</button>
+    
+                </form>
+            </div>
+        </div> 
+    </div>
+    
 </body>
 </html>
+
+<!-- <script>
+    let show =()=>{
+        document.querySelector(".edit").style.display="block"
+        
+    }
+
+    let cl =()=>{
+      
+        document.querySelector(".edit").style.display="none"
+       
+    }
+
+</script> -->
