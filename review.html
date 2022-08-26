@@ -67,13 +67,13 @@
                     <div class="cart-product-name">
 
                         <div class="product-name">
-                            <h3>Electronics Basket</h3>
+                            <h3>Basket</h3>
                         </div>
                         <div class="amount">
                             <div class="totalItems">
-                                <label>Total (<span>1</span> Items)</label>
+                                <label>Total (<span id="totalItems"></span> Items)</label>
                             </div>
-                            <h3 id="available-amt">₹44.00</h3>
+                            <h3 id="available-amt"></h3>
                         </div>
 
                     </div>
@@ -81,7 +81,7 @@
 
                     <!-- Product Items start -->
                     <div class="product-details">
-                        <div class="product-itemsdetails">
+                        <!-- <div class="product-itemsdetails">
                             <div class="product-img">
                                 <img src="https://www.jiomart.com/images/product/75x75/490002339/closeup-everfresh-red-hot-triple-fresh-formula-toothpaste-80-g-product-images-o490002339-p490002339-0-202203170622.jpg"
                                     alt="">
@@ -104,7 +104,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -130,29 +130,29 @@
 
                         <div>
                             <label> MRP Total</label>
-                            <span class="span-right" id="">₹44.00</span>
+                            <span class="span-right" id="mrp">00.00</span>
                             <hr>
                         </div>
 
                         <div>
 
                             <label>Product Discount</label>
-                            <span class="span-right" id="">-₹48.00</span>
+                            <span class="span-right" id="">₹0.00</span>
                             <hr>
                         </div>
 
                         <div>
                             <span>Total Amount</span>
-                            <span class="span-right" id="">₹44.00</span>
+                            <span class="span-right" id="tota-price"></span>
                         </div>
                         <div>
-                            <label>You Save <span id="total-save"> ₹4.00</span></label>
+                            <label>You Save <span id="total-save">0</span></label>
                         </div>
 
                     </div>
 
                     <div id="checkOut-btn">
-                        <a href="success.html"> <button id="btn-checkout">Place Order</button></a>
+                        <a href="payments.html"> <button id="btn-checkout">Place Order</button></a>
                     </div>
                 </div>
 
@@ -165,3 +165,5 @@
 </body>
 
 </html>
+
+<script src="scripts/review.js"></script>
