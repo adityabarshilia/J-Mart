@@ -22,16 +22,16 @@ function header(){
                     <a href="">Fruits & Vegetables</a>
                     <a href="">Dairy & Bakery</a>
                     <a href="">Staples</a>
-                    <a href="">asd</a>
-                    <a href="">asd</a>
-                    <a href="">asd</a>
+                    <a href="">Snacks & Branded Foods</a>
+                    <a href="">Beverages</a>
+                    <a href="">Personal Care</a>
                 </div>
                 <div>
-                    <a href="">asd</a>
-                    <a href="">asd</a>
-                    <a href="">asd</a>
-                    <a href="">asd</a>
-                    <a href="">asd</a>
+                    <a href="">Home Care</a>
+                    <a href="">Home & Kitchen</a>
+                    <a href="">Mom & Baby Care</a>
+                    <a href="">Books</a>
+                    <a href="">Pets</a>
                 </div>
             </div>
         </div>
@@ -39,48 +39,48 @@ function header(){
         <div id="two" class="bottom_links"><span>Home & Kitchen</span><span class="down_arrow"></span>
             <div id="d2" class="ddown">
                 <div>
-                    <a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                        href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                        href="">asd</a><a href="">asd</a><a href="">asd</a>
+                    <a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a
+                        href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a
+                        href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a>
                 </div>
                 <div>
-                    <a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                        href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                        href="">asd</a><a href="">asd</a>
+                    <a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a
+                        href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a
+                        href="">Jio Mart</a><a href="">Jio Mart</a>
                 </div>
             </div>
         </div>
         <div id="three" class="bottom_links"><span>Fashion</span><span class="down_arrow"></span>
             <div id="d3" class="ddown">
                 <div>
-                    <a href="">asd</a>
-                    <a href="">asd</a>
-                    <a href="">asd</a>
+                    <a href="">Jio Mart</a>
+                    <a href="">Jio Mart</a>
+                    <a href="">Jio Mart</a>
                 </div>
                 <div>
-                    <a href="">asd</a>
-                    <a href="">asd</a>
-                    <a href="">asd</a>
+                    <a href="">Jio Mart</a>
+                    <a href="">Jio Mart</a>
+                    <a href="">Jio Mart</a>
                 </div>
             </div>
         </div>
         <div id="four" class="bottom_links"><span>Electronics</span><span class="down_arrow"></span>
             <div id="d4" class="ddown">
-                <a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                    href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                    href="">asd</a><a href="">asd</a>
+                <a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a
+                    href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a
+                    href="">Jio Mart</a><a href="">Jio Mart</a>
             </div>
         </div>
         <div id="five" class="bottom_links"><span>Beauty</span><span class="down_arrow"></span>
             <div id="d5" class="ddown">
-                <a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                    href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a href="">asd</a><a
-                    href="">asd</a><a href="">asd</a>
+                <a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a
+                    href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a href="">Jio Mart</a><a
+                    href="">Jio Mart</a><a href="">Jio Mart</a>
             </div>
         </div>
         <div id="six" class="bottom_links"><span>Jewellery</span><span class="down_arrow"></span>
             <div id="d6" class="ddown">
-                <a href="">asd</a>
+                <a href="">Jio Mart</a>
             </div>
         </div>
     </div>`;
