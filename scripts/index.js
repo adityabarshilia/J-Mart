@@ -1,12 +1,12 @@
 import header from './header.js';
 import footer from './footer.js';
 
+let cart_count = JSON.parse(localStorage.getItem('count'));
 let carousel1 = document.getElementById('myCarousel');
 let header_div = document.querySelector('.header');
 let footer_div = document.getElementById('footer_container');
 let lc = document.getElementById('lc');
 let rc = document.getElementById('rc');
-
 
 currentLocation();
 
@@ -23,6 +23,12 @@ let burger = document.getElementById('burger');
 let sidebar_con = document.querySelector('.s_container');
 let closebtn = document.querySelector('.myicon');
 let display_pin = document.getElementById('pin');
+let Addbtns = document.querySelectorAll('.btn');
+let count_display = document.getElementById('cart_counter');
+
+Addbtns.forEach(val => val.addEventListener('click', () => {
+    counter();
+}));
 
 burger.addEventListener('click', () => {
     sidebar_con.style.width = '330px';
@@ -32,6 +38,13 @@ closebtn.addEventListener('click', () => {
     sidebar_con.style.width = '0px';
 });
 
+
+
+function counter(){
+    cart_count += 1;
+    count_display.innerText = +(count_display.innerText) + 1;
+    localStorage.setItem('count', JSON.stringify(cart_count));
+}
 
 function currentLocation(){
     const options = {
