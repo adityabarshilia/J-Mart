@@ -5,13 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>card</title>
 
+    <!-- <style>
+        nav {
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+    </style> -->
+
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
 
 </head>
 
 <body>
+    <nav></nav>
 
     <div id="container">
         <div class="card-title">
@@ -259,9 +271,25 @@
         </div>
 
 
-
+        <footer></footer>
 
 
 </body>
 
 </html>
+
+
+<script type="module">
+    import header from './scripts/header.js';
+    import footer from './scripts/footer.js';
+
+    let footer_div = document.querySelector('footer');
+    let nav = document.querySelector('nav');
+
+
+    footer_div.innerHTML = footer();
+    nav.innerHTML = header();
+    nav.style.width = "100%";
+    footer_div.style.width = "100%";
+
+</script>

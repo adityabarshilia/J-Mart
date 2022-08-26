@@ -1,11 +1,19 @@
 body {
     background: #f6f6f7;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 #container {
     width: 90%;
     margin: auto;
-
+    margin-top:  130px;
     /* border: 1px solid black; */
 }
 
@@ -157,11 +165,8 @@ body {
 .Payment-box {
     margin: 8px 0px 15px 23px;
     width: 95%;
-
     position: sticky;
-    top: 10px;
-
-
+    top: 100px;
 }
 
 #payment-detials {

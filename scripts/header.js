@@ -2,7 +2,7 @@ function header(){
     return `<div class="upper">
         <div id="burger"></div>
         <div id="logo"></div>
-        <div id="searchdiv"><input type="text" id="search"
+        <div id="searchdiv"><input type="text" id="search5"
                 placeholder="Search essentials, groceries, and more ..."><span id="searchburger"></span></div>
         <div id="accdiv"><span id="account"></span id="acctext"><span><a id="si_btn" style="color:white;" href="">Sign in</a> / <a id="sup_btn" style="color:white;" href="">Sign up</a></span></div>
         <div id="cartdiv"><span id="cart"></span id="carttext"><a style="color:white; cursor:pointer;" href="card.html"><span>Cart</span></a><span id="cart_counter">0</span>

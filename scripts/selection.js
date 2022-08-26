@@ -1,4 +1,14 @@
+import header from './header.js';
+import footer from './footer.js';
 
+let footer_div = document.querySelector('footer');
+let nav = document.querySelector('nav');
+
+
+footer_div.innerHTML = footer();
+nav.innerHTML = header();
+nav.style.width = "100%";
+footer_div.style.width = "100%";
 
 // Get Data 
 getData();
