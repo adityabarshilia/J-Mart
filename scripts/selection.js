@@ -169,9 +169,30 @@ function savelocalData(ele){
     count++;
     localStorage.setItem("count", JSON.stringify(count));
 
+    ele.count = 1;
+
     let data = JSON.parse(localStorage.getItem("jiomart")) || [];
-    data.push(ele);
-    localStorage.setItem("jiomart", JSON.stringify(data));
+
+    let check = false;
+    let index = null;
+
+    for(let i = 0; i < data.length; i++){
+        if(data[i].id == ele.id){
+            check = true;
+            index = i;
+            break;
+        }
+    }
+
+    if(check){
+        data[index].count++;
+        localStorage.setItem("jiomart", JSON.stringify(data));
+    }else{
+        data.push(ele);
+        localStorage.setItem("jiomart", JSON.stringify(data));
+    }
+
+  
 }
 
 // Go To
