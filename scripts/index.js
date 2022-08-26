@@ -8,7 +8,7 @@ let lc = document.getElementById('lc');
 let rc = document.getElementById('rc');
 
 
-// currentLocation();
+currentLocation();
 
 header_div.innerHTML = header();
 footer_div.innerHTML = footer();
@@ -22,6 +22,7 @@ rc.style.height = "320px";
 let burger = document.getElementById('burger');
 let sidebar_con = document.querySelector('.s_container');
 let closebtn = document.querySelector('.myicon');
+let display_pin = document.getElementById('pin');
 
 burger.addEventListener('click', () => {
     sidebar_con.style.width = '330px';
@@ -32,39 +33,32 @@ closebtn.addEventListener('click', () => {
 });
 
 
-// function currentLocation(){
-//     const options = {
-//     enableHighAccuracy: true,
-//     timeout: 5000,
-//     maximumAge: 0
-//     };
+function currentLocation(){
+    const options = {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0
+    };
 
-//     async function success(pos) {
-//     const crd = pos.coords;
-//     let add;
-//     // console.log(crd);
+    async function success(pos) {
+    const crd = pos.coords;
+    // console.log(crd);
 
-//     // let res = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${crd.latitude}&lon=${crd.longitude}&limit=5&appid=63c3704e63cc40d74ad87bdb9f68f3b8`);
-//     // let data = await res.json();
-//     // console.log(data);
+    let res = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${crd.latitude}&lon=${crd.longitude}&limit=5&appid=63c3704e63cc40d74ad87bdb9f68f3b8`);
+    let data = await res.json();
+    let city = data[0].name;
+    // console.log(city)
 
-//     let geocoder = new google.maps.Geocoder();
-//     let latlng = new google.maps.LatLng(lat, lng);
-//     geocoder.geocode({ latLng: latlng }, function (results, status) {
-//       if (status == google.maps.GeocoderStatus.OK) {
-//         if (results[0]) {
-//            add = results[0].formatted_address;
-//         }
-//       }
-//     });
-
-//     console.log(add);
-//     }
+    let res2 = await fetch(`https://api.postalpincode.in/postoffice/${city}`);
+    let data2 = await res2.json();
+    // console.log(data2[0])
+    display_pin.innerText = data2[0].PostOffice[0].Pincode;
+    }
 
 
-//     function error(err) {
-//     console.warn(`ERROR(${err.code}): ${err.message}`);
-//     }
+    function error(err) {
+    console.warn(`ERROR(${err.code}): ${err.message}`);
+    }
 
-//     navigator.geolocation.getCurrentPosition(success, error, options);
-// }
+    navigator.geolocation.getCurrentPosition(success, error, options);
+}

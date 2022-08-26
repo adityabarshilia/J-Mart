@@ -13,7 +13,7 @@ function header(){
             <span id="location_logo"></span>
             <div>
                 <p id="deltext">Deliver to</p>
-                <p>123123</p>
+                <p id="pin">123123</p>
             </div>
         </div>
         <div id="one" class="bottom_links"><span>Groceries</span><span class="down_arrow"></span>
