@@ -21,9 +21,10 @@
             <div class="mobile">
                 <span id="isdcode">+91</span>
                 <div class="separator"></div>
-                <input type="number" id="" placeholder="Enter your mobile no">
+                <input type="number" id="num" placeholder="Enter your mobile no" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                maxlength = "10">
             </div>
-            <div class="btn"><a href="signup.html"><button id="submit"><i class="fa-solid fa-chevron-right right"></i></button></a></div>
+            <div class="btn"><button id="submit"><i class="fa-solid fa-chevron-right right"></i></button></div>
         </div>
     </div>
     <div class="terms-condition">
@@ -32,3 +33,4 @@
     
 </body>
 </html>
+<script src="../scripts/signin.js"></script>

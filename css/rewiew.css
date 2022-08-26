@@ -191,6 +191,11 @@ form {
     margin-bottom: 20px;
 }
 
+
+form input{
+    padding: 8px;
+}
+
 #address-btn {
     width: 50%;
     margin-left: 50%;

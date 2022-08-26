@@ -1,0 +1,120 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.color-red-cross{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.edit-modal{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background:rgb(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    
+}
+
+.cross-red{
+    text-align: center;
+}
+.edit{
+    height: auto;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+
+}
+.customer-form{
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+input[type="text"],input[type="email"],input[type="number"],button{
+    width: 95%;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize:vertical;
+    border-radius: 5px;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+select,input[type="date"]{
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(102,102,102);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize:vertical;
+    border-radius: 5px;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    cursor: pointer;
+}
+label{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(30,155,210);
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+.box1{
+    width: 95%;
+    height: 90px;
+    /* border: 1px solid #000; */
+    display: flex;
+    gap:20px;
+    
+}
+.box1 > div{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid rgb(170, 41, 41); */
+}
+ select,#dob{
+    width: 100%;
+}
+.edit-profile{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(102,102,102);
+    margin-top: 0;
+    text-align: center;
+}
+#submit{
+    cursor: pointer;
+    background-color: rgb(0,142,204);
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

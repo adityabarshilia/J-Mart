@@ -36,11 +36,19 @@ h1{
     line-height: 2px;
    
 }
+.name-section{
+    line-height: 20px;
+    
+}
+#num{
+    color: rgb(95,184,223);
+}
 #image {
     padding: 25px;
 }
 #mail{
     font-style: italic;
+    color: rgb(95,184,223);
 }
 .payment{
     width: 93%;
@@ -60,6 +68,7 @@ h1{
 }
 .payment-methods{
     display: flex;
+    align-items: center;
     background-color: rgb(102,187,224);
     border-radius: 5px;
     grid-area: pay;
@@ -67,12 +76,14 @@ h1{
 .order-history{
 
     display: flex;
+    align-items: center;
     background-color: rgb(102,187,224);
     border-radius: 5px;
     grid-area: ordr;
 }
 .delivery-addresses{
     display: flex;
+    align-items: center;
     background-color: rgb(102,187,224);
     border-radius: 5px;
     grid-area: address;
@@ -84,11 +95,11 @@ h1{
     background-color: white;
     border-radius: 10px;
 }
-.account-information-upper{
-    width: 95%;
+#account-information-upper{
+    width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+   justify-content: space-between;
     align-items: center;
 }
 #heading{
@@ -96,19 +107,22 @@ h1{
     font-weight: 500;
 }
 #term{
-    color: red;
-    margin-right: 5px;  
+    width: 0;
+    color: red; 
+    text-transform: uppercase;
+    margin-right: 15px;
     font-weight: 500;
+    border: none;
+    cursor: pointer;
 }
 .customer-details{
-    width: 95%;
+    width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 
 }
 .name{
-    line-height: 3px;
     margin-bottom: 40px;
 }
 #frstp{
@@ -140,7 +154,7 @@ hr{
     margin-top: 40px;
 }
 .queries{
-    line-height: 3px;
+ 
     margin-bottom: 30px;
 }
 #wpnumber{
