@@ -8,6 +8,47 @@
     <title>Buy Grocery Online at Best Prices Pan India</title>
     <link rel="stylesheet" href="../styles/signup.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    <style>
+        .verify-next-line{
+            position: relative;
+        }
+        #resOTP{
+            position: absolute;
+            right: 0;
+            bottom: -60px;
+            cursor: pointer;
+        }
+        #waitingotp{
+            position: absolute;
+            left: 0;
+            bottom: -60px;
+            color: rgb(165, 165, 165);
+            display: none;
+        }
+        .active{
+            display: block;
+        }
+        .hide{
+            display: none;
+        }
+        .input-control{
+            position: relative;
+            width: 90%;
+        }
+        .input-control > i{
+            position: absolute;
+            right: 10px;
+            top: 12px;
+            cursor: pointer;
+            color: gray;
+        }
+        /* .pnone{
+            display: none;
+        }
+        .pvis{
+            display: block;
+        } */
+    </style>
 </head>
 <body>
     <div class="main-container">
@@ -19,12 +60,30 @@
             <div class="form-fill">
                 <form action="#">
                     <p id="next-line">Please enter your details.</p>
-                    <input type="text" id="fname" placeholder="Your First Name">
-                    <input type="text" id="lname" placeholder="Your Last Name">
-                    <input type="email" id="emailid" placeholder="Enter your Email Id">
-                    <input type="password" id="password" placeholder="Enter your Password">
+                    <div class="input-control">
+                        <input type="text" id="fname" placeholder="Your First Name">
+                    </div>
+                    <div class="input-control">
+                        <input type="text" id="lname" placeholder="Your Last Name">
+                    </div>
+                    <div class="input-control">
+                        <input type="email" id="emailid" placeholder="Enter your Email Id">
+                    </div>
+                    <div class="input-control">
+                        <input type="password" id="password" placeholder="Enter your Password">
+                        <i class="fa-solid fa-eye pass"></i>
+                        <i class="fa-solid fa-eye-slash hpass" style="display: none;"></i>
+                    </div>
                     <p id="password-condition">Use 8 or more characters with a mix of letters & numbers</p>
-                    <input type="password" id="cpassword" placeholder="Enter your Password">
+
+                    <!-- <input type="password" id="password" placeholder="Enter your Password"> -->
+
+                    <div class="input-control">
+                        <input type="password" id="cpassword" placeholder="Enter your Password">
+                        <i class="fa-solid fa-eye cpass"></i>
+                        <i class="fa-solid fa-eye-slash chpass" style="display: none;"></i>
+                    </div>
+
                     <div class="get-notification-whatsapp">
                         <img id="whatsappicon" src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/whatsapp-512.png" alt="whatsapp">
                         <p id="text">Enable order updates and important information on Whatsapp</p>
@@ -32,12 +91,14 @@
                     </div>
                     <p id="verify">Verify</p>
                     <div class="verify-next-line">
-                        <p id="verify-next-lines">We have sent 6 digit OTP on <span></span></p>
+                        <p id="verify-next-lines">We have sent 6 digit OTP on <b>+91-<span id="getNumber"></span></b></p>
                         <a href="signin.html" id="term">Change</a>
                     </div>
                     <input type="text" id="otp" placeholder="Enter your OTP">
-                    <p id="waitingotp">Waiting for OTP... <span id="otptimer"></span> Sec</p>
-                    <button id="resOTP" style="display: none;">Resend OTP</button>
+                    <a style="display: none;" id="resOTP" id="term">Resend OTP</a>
+                    <p id="waitingotp" >Waiting for OTP... <span id="otptimer"></span> Sec</p>
+                    <!-- <p id="waitingotp">Waiting for OTP... <span id="otptimer"></span> Sec</p> -->
+                    <!-- <button id="resOTP" style="display: none;">Resend OTP</button> -->
                     <button id="bttn"><a href="#">Verify</a></button>
                 </form>
             </div>

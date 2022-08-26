@@ -7,7 +7,9 @@
 body{
     background-color: rgb(246,246,247);
 }
-
+b{
+    color: black;
+}
 .main-container{
     width: 90%;
     background-color: white;
@@ -39,7 +41,7 @@ body{
     margin: auto;
 }
 input[type="password"],input[type="text"],input[type="email"],button{
-    width: 90%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     box-sizing: border-box;
