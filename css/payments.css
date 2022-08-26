@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f7;
+}
+
+#header {
+    background: #008ECC;
+    padding: 15px 0px 15px 10%;
+    margin: -8px;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+}
+
+
+.title-box {
+    /* border: 1px solid blue; */
+    display: flex;
+    margin-top: 10px;
+
+
+}
+
+
+#order-status {
+    /* border: 1px solid goldenrod; */
+    height: 50px;
+    margin: 3px 0px;
+    padding-bottom: 17px;
+    display: flex;
+    flex-grow: 5;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+#order-status li {
+    display: flex;
+    float: left;
+    list-style: none;
+    margin: 5px 40px;
+    align-items: center;
+
+}
+
+/* ------------------- */
+
+#container-box {
+
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+#leftbox-items {
+    /* border: 1px solid green; */
+    width: 55%;
+}
+
+.paymet-list {
+    background: #ffff;
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.payment-m {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+input[type=radio] {
+    width: 3%;
+    height: 2em;
+}
+
+/* ------------------------------ */
+
+#rightbox-items {
+    /* border: 1px solid goldenrod; */
+    width: 45%;
+}
+
+.Payment-box {
+    margin: 8px 0px 15px 23px;
+    width: 95%;
+    position: sticky;
+    top: 10px;
+
+}
+
+
+#payment-detials {
+    background: #fff;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 17px 40px 15px;
+    border-radius: 4px;
+}
+
+
+#payment-detials label {
+
+    font-size: 14px;
+    color: rgba(0, 0, 0, .5);
+    line-height: 24px;
+}
+
+#payment-detials>div:nth-child(4) {
+    font-weight: bold;
+
+}
+
+
+#payment-detials>div:nth-child(5) label {
+    float: right;
+    color: #00a100;
+    margin-top: 10px;
+}
+
+.span-right {
+    float: right;
+}
+
+
+#btn-checkout {
+    float: right;
+    width: 50%;
+    padding: 10px 6px;
+    color: #fff;
+    background: #008ecc;
+    border-radius: 4px;
+    border: none;
+}
+
+#btn-checkout:hover {
+    cursor: pointer;
+}
