@@ -68,6 +68,7 @@ h1{
 }
 .payment-methods{
     display: flex;
+    align-items: center;
     background-color: rgb(102,187,224);
     border-radius: 5px;
     grid-area: pay;
@@ -75,12 +76,14 @@ h1{
 .order-history{
 
     display: flex;
+    align-items: center;
     background-color: rgb(102,187,224);
     border-radius: 5px;
     grid-area: ordr;
 }
 .delivery-addresses{
     display: flex;
+    align-items: center;
     background-color: rgb(102,187,224);
     border-radius: 5px;
     grid-area: address;
