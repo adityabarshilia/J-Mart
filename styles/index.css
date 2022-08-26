@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-.header {
+/* .header {
     display: none;
     position: fixed;
     top: 0;
@@ -281,7 +281,7 @@
     justify-content: space-between;
     cursor: pointer;
     height: 100%;
-}
+} */
 
 #myCarousel {
     width: 100%;
@@ -528,7 +528,7 @@ h2 {
     transform: scale(1.05);
 }
 
-#footer_container {
+/* #footer_container {
     background-color: #EDEDEF;
 }
 
@@ -557,11 +557,11 @@ h2 {
     margin-bottom: 10px;
 }
 
-ul {
+footer ul {
     line-height: 22px;
 }
 
-h5 {
+footer h5 {
     margin-bottom: 12px;
     font-size: 12px;
 }
@@ -594,7 +594,7 @@ h5 {
     padding: 10px 0;
     border-top: 1px solid rgb(204, 202, 202);
     font-size: 12px;
-}
+} */
 
 .s_container {
     width: 0px;

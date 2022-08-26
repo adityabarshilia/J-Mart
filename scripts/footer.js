@@ -1,7 +1,7 @@
 function footer(){
     return `<div id="footer">
     <div>
-        <h5>MOST POPULAR CATEGORIES</h5>
+        <h5 style="font-size:12px; font-weight:bold;">MOST POPULAR CATEGORIES</h5>
         <ul>
             <li>Staples</li>
             <li>Beverages</li>
@@ -14,7 +14,7 @@ function footer(){
         </ul>
     </div>
     <div>
-        <h5>CUSTOMER SERVICES</h5>
+        <h5 style="font-size:12px; font-weight:bold;">CUSTOMER SERVICES</h5>
         <ul>
             <li>About Us</li>
             <li>FAQ</li>
@@ -26,7 +26,7 @@ function footer(){
     </div>
 
     <div>
-        <h5>CONTACT US</h5>
+        <h5 style="font-size:12px; font-weight:bold;">CONTACT US</h5>
         <p>WhatsApp us : <a
                 href="https://api.whatsapp.com/send/?phone=917000370003&text=Hi&type=phone_number&app_absent=0">70003
                 70003</a></p>
@@ -38,7 +38,7 @@ function footer(){
             other problems on the beta website, please email us on <a href="cs@jiomart.com">cs@jiomart.com</a>
         </p>
 
-        <h5 id="dapp">DOWNLOAD APP</h5>
+        <h5 style="font-size:12px; font-weight:bold;" id="dapp">DOWNLOAD APP</h5>
         <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/play_store.png" alt="">
         <img src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/ios_store.png" alt="">
     </div>
