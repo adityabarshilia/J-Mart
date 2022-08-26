@@ -227,11 +227,11 @@ h2 {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 50px;
 }
 
-#slider1 div {
+#slider1 >div {
     width: 180px;
     height: 226px;
     cursor: pointer;
