@@ -19,9 +19,9 @@ function header(){
         <div id="one" class="bottom_links"><span>Groceries</span><span class="down_arrow"></span>
             <div id="d1" class="ddown">
                 <div>
-                    <a href="">asd</a>
-                    <a href="">asd</a>
-                    <a href="">asd</a>
+                    <a href="">Fruits & Vegetables</a>
+                    <a href="">Dairy & Bakery</a>
+                    <a href="">Staples</a>
                     <a href="">asd</a>
                     <a href="">asd</a>
                     <a href="">asd</a>

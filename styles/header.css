@@ -1,0 +1,277 @@
+.header {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 112px;
+    background-color: aliceblue;
+    z-index: 10;
+}
+
+.upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    background-color: #008ECC;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13.5px;
+    font-weight: 600;
+    width: 100%;
+    height: 40px;
+    background-color: #ECECED;
+    line-height: 20px;
+    gap: 90px;
+}
+
+#d1 {
+    width: 400px;
+    display: none;
+    justify-content: space-between;
+}
+
+#d1>div {
+    width: 50%;
+    text-align: left;
+}
+
+#d1>div:nth-child(2) {
+    border-left: 1px solid lightgray;
+}
+
+#d2 {
+    width: 400px;
+    display: none;
+    justify-content: space-between;
+}
+
+#d2>div {
+    width: 50%;
+    text-align: left;
+}
+
+#d2>div:nth-child(2) {
+    border-left: 1px solid lightgray;
+}
+
+#d3 {
+    width: 400px;
+    display: none;
+    justify-content: space-between;
+}
+
+#d3>div {
+    width: 50%;
+    text-align: left;
+}
+
+#d3>div:nth-child(2) {
+    border-left: 1px solid lightgray;
+}
+
+#d4 {
+    width: 200px;
+    display: none;
+}
+
+#d5 {
+    width: 200px;
+    display: none;
+}
+
+#d6 {
+    width: 200px;
+    display: none;
+}
+
+.ddown {
+    position: absolute;
+    top: 110px;
+    background-color: #ECECED;
+    z-index: 1;
+}
+
+.ddown a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.ddown a:hover {
+    background-color: white;
+    color: #008ECC;
+}
+
+#one:hover #d1 {
+    display: flex;
+}
+
+#two:hover #d2 {
+    display: flex;
+}
+
+#three:hover #d3 {
+    display: flex;
+}
+
+#four:hover #d4 {
+    display: block;
+}
+
+#five:hover #d5 {
+    display: block;
+}
+
+#six:hover #d6 {
+    display: block;
+}
+
+#burger {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/burger_menu.svg) center no-repeat;
+    background-size: 100%;
+}
+
+#logo {
+    width: 110px;
+    height: 36.7px;
+    cursor: pointer;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/jiomart_logo_beta.svg) center no-repeat;
+    background-size: 100%;
+}
+
+#searchdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+#search {
+    width: 650px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+#searchburger {
+    display: block;
+    height: 24px;
+    width: 24px;
+    color: #fff;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/list-view.svg) center no-repeat;
+}
+
+#accdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 5px;
+}
+
+#account {
+    white-space: nowrap;
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/profile.svg) center no-repeat;
+    background-size: 100%;
+    background-color: #008ECC;
+    padding-left: 25px;
+    line-height: 24px;
+}
+
+#cartdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 5px;
+}
+
+#cart {
+    white-space: nowrap;
+    display: block;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/cart.svg) center no-repeat;
+    background-size: 100%;
+    background-color: #008ECC;
+    padding-left: 25px;
+    line-height: 24px;
+}
+
+#cart_counter {
+    display: block;
+    position: relative;
+    left: -50px;
+    top: -6px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 50%;
+    background-color: #DD0608;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+}
+
+#location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1.2px;
+    gap: 7px;
+}
+
+#location_logo {
+    display: block;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/location-on.svg) center no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+}
+
+#location div p {
+    margin: 0;
+    padding: 0;
+}
+
+.down_arrow {
+    display: block;
+    background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/chevron-down.svg) center no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+}
+
+#deltext {
+    color: #767676;
+}
+
+.bottom_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 100%;
+}
