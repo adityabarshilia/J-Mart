@@ -7,6 +7,9 @@ let header_div = document.querySelector('.header');
 let footer_div = document.getElementById('footer_container');
 let lc = document.getElementById('lc');
 let rc = document.getElementById('rc');
+let signUpData = JSON.parse(localStorage.getItem('signupData'));
+let msg = document.getElementById('msg');
+
 
 currentLocation();
 
@@ -25,8 +28,17 @@ let closebtn = document.querySelector('.myicon');
 let display_pin = document.getElementById('pin');
 let Addbtns = document.querySelectorAll('.btn');
 let count_display = document.getElementById('cart_counter');
+// let signupData=JSON.parse(localStorage.getItem("data"))|| [];
+let sibtn = document.getElementById('si_btn');
 
 displayCount();
+
+
+if(signUpData !== null){
+    sibtn.innerText = signUpData.firstname + signUpData.lastname;
+    msg.innerText = `Hello, ${signUpData.firstname + signUpData.lastname}`;
+    msg.style.marginLeft = '-100px';
+}
 
 Addbtns.forEach(val => val.addEventListener('click', () => {
     counter();

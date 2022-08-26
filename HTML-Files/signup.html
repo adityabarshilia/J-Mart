@@ -24,7 +24,7 @@
                     <input type="email" id="emailid" placeholder="Enter your Email Id">
                     <input type="password" id="password" placeholder="Enter your Password">
                     <p id="password-condition">Use 8 or more characters with a mix of letters & numbers</p>
-                    <input type="password" id="password" placeholder="Enter your Password">
+                    <input type="password" id="cpassword" placeholder="Enter your Password">
                     <div class="get-notification-whatsapp">
                         <img id="whatsappicon" src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/whatsapp-512.png" alt="whatsapp">
                         <p id="text">Enable order updates and important information on Whatsapp</p>
@@ -36,6 +36,8 @@
                         <a href="signin.html" id="term">Change</a>
                     </div>
                     <input type="text" id="otp" placeholder="Enter your OTP">
+                    <p id="waitingotp">Waiting for OTP... <span id="otptimer"></span> Sec</p>
+                    <button id="resOTP" style="display: none;">Resend OTP</button>
                     <button id="bttn"><a href="#">Verify</a></button>
                 </form>
             </div>
@@ -47,3 +49,4 @@
     
 </body>
 </html>
+<script src="../scripts/signup.js"></script>
