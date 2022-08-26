@@ -77,6 +77,12 @@ body {
     width: auto;
 }
 
+.product-img>img {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+}
+
 .product-itemsName {
     /* border: 1px solid green; */
     width: 100%;

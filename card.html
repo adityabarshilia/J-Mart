@@ -9,14 +9,15 @@
 
     <link rel="stylesheet" href="css/card.css">
 
+
 </head>
 
 <body>
-
+    <div class="header"></div>
     <div id="container">
         <div class="card-title">
             <div id="card-count">
-                <h2>My Card <span>0</span></h2>
+                <h2>My Card (<span id="total_items"></span>)</h2>
             </div>
             <div id="order-status">
                 <ul>
@@ -38,20 +39,21 @@
             <div class="cart-product">
                 <div class="cart-product-name">
                     <div class="product-name">
-                        <h3>Electronics Basket</h3>
+                        <h3>Basket</h3>
                     </div>
                     <div class="amount">
-                        <h3 id="available-amt">₹44.00</h3>
+                        <h3 id="available-amt"></h3>
                     </div>
                 </div>
 
 
                 <div class="product-details">
                     <div class="product-itemsdetails">
-                        <div class="product-img">
+                        <!-- <div class="product-img">
                             <img src="https://www.jiomart.com/images/product/75x75/490002339/closeup-everfresh-red-hot-triple-fresh-formula-toothpaste-80-g-product-images-o490002339-p490002339-0-202203170622.jpg"
                                 alt="">
                         </div>
+
                         <div class='product-itemsName'>
                             <h4>Closeup Everfresh+ Red Hot Triple Fresh Formula Toothpaste 80 g</h4>
                             <div>
@@ -70,132 +72,11 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
                     </div>
+                    <!-- <hr> -->
                 </div>
 
-
-
-
-                <!-- 2nd -->
-
-                <div class="product-details">
-                    <div class="product-itemsdetails">
-                        <div class="product-img">
-                            <img src="https://www.jiomart.com/images/product/75x75/490002339/closeup-everfresh-red-hot-triple-fresh-formula-toothpaste-80-g-product-images-o490002339-p490002339-0-202203170622.jpg"
-                                alt="">
-                        </div>
-                        <div class='product-itemsName'>
-                            <h4>Closeup Everfresh+ Red Hot Triple Fresh Formula Toothpaste 80 g</h4>
-                            <div>
-                                <div class="product-itemsPrice">
-                                    <span id="special-price">₹44.00</span>
-                                    <span id="mrp-price">₹48.00</span>
-                                    <span id="save-price">You Save ₹4.00</span>
-                                </div>
-                                <div class="product-qty">
-
-                                    <span><img src="https://www.jiomart.com/msassets/images/icons/minus-bulecolor.svg"
-                                            alt=""></span>
-                                    <span id="qty">1</span>
-                                    <span><img src="https://www.jiomart.com/msassets/images/icons/plus-bluecolor.svg"
-                                            alt=""></span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2nd end  -->
-
-                <div class="product-details">
-                    <div class="product-itemsdetails">
-                        <div class="product-img">
-                            <img src="https://www.jiomart.com/images/product/75x75/490002339/closeup-everfresh-red-hot-triple-fresh-formula-toothpaste-80-g-product-images-o490002339-p490002339-0-202203170622.jpg"
-                                alt="">
-                        </div>
-                        <div class='product-itemsName'>
-                            <h4>Closeup Everfresh+ Red Hot Triple Fresh Formula Toothpaste 80 g</h4>
-                            <div>
-                                <div class="product-itemsPrice">
-                                    <span id="special-price">₹44.00</span>
-                                    <span id="mrp-price">₹48.00</span>
-                                    <span id="save-price">You Save ₹4.00</span>
-                                </div>
-                                <div class="product-qty">
-
-                                    <span><img src="https://www.jiomart.com/msassets/images/icons/minus-bulecolor.svg"
-                                            alt=""></span>
-                                    <span id="qty">1</span>
-                                    <span><img src="https://www.jiomart.com/msassets/images/icons/plus-bluecolor.svg"
-                                            alt=""></span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2nd end  -->
-
-
-                <div class="product-details">
-                    <div class="product-itemsdetails">
-                        <div class="product-img">
-                            <img src="https://www.jiomart.com/images/product/75x75/490002339/closeup-everfresh-red-hot-triple-fresh-formula-toothpaste-80-g-product-images-o490002339-p490002339-0-202203170622.jpg"
-                                alt="">
-                        </div>
-                        <div class='product-itemsName'>
-                            <h4>Closeup Everfresh+ Red Hot Triple Fresh Formula Toothpaste 80 g</h4>
-                            <div>
-                                <div class="product-itemsPrice">
-                                    <span id="special-price">₹44.00</span>
-                                    <span id="mrp-price">₹48.00</span>
-                                    <span id="save-price">You Save ₹4.00</span>
-                                </div>
-                                <div class="product-qty">
-
-                                    <span><img src="https://www.jiomart.com/msassets/images/icons/minus-bulecolor.svg"
-                                            alt=""></span>
-                                    <span id="qty">1</span>
-                                    <span><img src="https://www.jiomart.com/msassets/images/icons/plus-bluecolor.svg"
-                                            alt=""></span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2nd end  -->
-
-
-                <div class="product-details">
-                    <div class="product-itemsdetails">
-                        <div class="product-img">
-                            <img src="https://www.jiomart.com/images/product/75x75/490002339/closeup-everfresh-red-hot-triple-fresh-formula-toothpaste-80-g-product-images-o490002339-p490002339-0-202203170622.jpg"
-                                alt="">
-                        </div>
-                        <div class='product-itemsName'>
-                            <h4>Closeup Everfresh+ Red Hot Triple Fresh Formula Toothpaste 80 g</h4>
-                            <div>
-                                <div class="product-itemsPrice">
-                                    <span id="special-price">₹44.00</span>
-                                    <span id="mrp-price">₹48.00</span>
-                                    <span id="save-price">You Save ₹4.00</span>
-                                </div>
-                                <div class="product-qty">
-
-                                    <span><img src="https://www.jiomart.com/msassets/images/icons/minus-bulecolor.svg"
-                                            alt=""></span>
-                                    <span id="qty">1</span>
-                                    <span><img src="https://www.jiomart.com/msassets/images/icons/plus-bluecolor.svg"
-                                            alt=""></span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2nd end  -->
 
 
             </div>
@@ -226,29 +107,29 @@
 
                         <div>
                             <label> MRP Total</label>
-                            <span class="span-right" id="">947</span>
+                            <span class="span-right" id="mrp">0</span>
                             <hr>
                         </div>
 
                         <div>
 
                             <label>Product Discount</label>
-                            <span class="span-right" id="">-404</span>
+                            <span class="span-right" id="dis-Coupon">0</span>
                             <hr>
                         </div>
 
                         <div>
                             <span>Total Amount</span>
-                            <span class="span-right" id="">543</span>
+                            <span class="span-right" id="tota-price">0</span>
                         </div>
                         <div>
-                            <label>You Save <span id="total-save"> ₹40.00</span></label>
+                            <label>You Save <span id="total-save">0</span></label>
                         </div>
 
                     </div>
 
                     <div id="checkOut-btn">
-                        <a href="payments.html"> <button id="btn-checkout">Place Order</button></a>
+                        <a href="review.html"> <button id="btn-checkout">Place Order</button></a>
                     </div>
                 </div>
 
@@ -265,3 +146,5 @@
 </body>
 
 </html>
+
+<script src="scripts/card.js"></script>

@@ -61,6 +61,11 @@ body {
 }
 
 
+.product-img>img {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+}
 
 .card-productlist {
     background: #ffff;
@@ -68,6 +73,7 @@ body {
     padding: 10px;
 
 }
+
 
 .product-itemsdetails {
     display: flex;
