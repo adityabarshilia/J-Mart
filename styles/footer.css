@@ -27,11 +27,11 @@
     margin-bottom: 10px;
 }
 
-footer ul {
+#footer ul {
     line-height: 22px;
 }
 
-footer h5 {
+#footer h5 {
     margin-bottom: 12px;
     font-size: 12px;
 }

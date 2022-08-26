@@ -1,7 +1,7 @@
 import header from './header.js';
 import footer from './footer.js';
 
-let cart_count = JSON.parse(localStorage.getItem('count'));
+let cart_count;
 let carousel1 = document.getElementById('myCarousel');
 let header_div = document.querySelector('.header');
 let footer_div = document.getElementById('footer_container');
@@ -26,6 +26,8 @@ let display_pin = document.getElementById('pin');
 let Addbtns = document.querySelectorAll('.btn');
 let count_display = document.getElementById('cart_counter');
 
+displayCount();
+
 Addbtns.forEach(val => val.addEventListener('click', () => {
     counter();
 }));
@@ -40,10 +42,17 @@ closebtn.addEventListener('click', () => {
 
 
 
+ 
+
 function counter(){
     cart_count += 1;
-    count_display.innerText = +(count_display.innerText) + 1;
     localStorage.setItem('count', JSON.stringify(cart_count));
+    displayCount();
+}
+
+function displayCount(){
+    cart_count = JSON.parse(localStorage.getItem('count'))||0;
+    count_display.innerText = +cart_count;
 }
 
 function currentLocation(){
