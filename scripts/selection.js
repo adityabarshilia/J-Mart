@@ -10,8 +10,30 @@ nav.innerHTML = header();
 nav.style.width = "100%";
 footer_div.style.width = "100%";
 
+let display_pin = document.getElementById('pin');
+
+
 // Get Data 
 getData();
+currentLocation();
+
+let count_display = document.getElementById('cart_counter');
+let cart_count;
+
+displayCount();
+
+function counter(){
+    cart_count += 1;
+    localStorage.setItem('count', JSON.stringify(cart_count));
+    displayCount();
+}
+
+function displayCount(){
+    cart_count = JSON.parse(localStorage.getItem('count'))||0;
+    count_display.innerText = +cart_count;
+}
+
+
 
 async function getData(){
 
@@ -28,7 +50,6 @@ async function getData(){
     }
 
 }
-
 
 
 // Display Cards
@@ -83,6 +104,7 @@ function displayCards(data){
         button.innerText = "Add to Cart";
         button.addEventListener("click", function(){
             savelocalData(ele);
+            counter();
         });
 
         let span = document.createElement("span");
@@ -188,4 +210,34 @@ function savelocalData(ele){
 function gotoInnerSection(ele){
     localStorage.setItem("check", JSON.stringify(ele));
     location.href = "inner-section.html";
+}
+
+function currentLocation(){
+    const options = {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0
+    };
+
+    async function success(pos) {
+    const crd = pos.coords;
+    // console.log(crd);
+
+    let res = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${crd.latitude}&lon=${crd.longitude}&limit=5&appid=63c3704e63cc40d74ad87bdb9f68f3b8`);
+    let data = await res.json();
+    let city = data[0].name;
+    // console.log(city)
+
+    let res2 = await fetch(`https://api.postalpincode.in/postoffice/${city}`);
+    let data2 = await res2.json();
+    console.log(data2[0].PostOffice[0].Pincode)
+    display_pin.innerText = data2[0].PostOffice[0].Pincode;
+    }
+
+
+    function error(err) {
+    console.warn(`ERROR(${err.code}): ${err.message}`);
+    }
+
+    navigator.geolocation.getCurrentPosition(success, error, options);
 }

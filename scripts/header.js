@@ -16,22 +16,22 @@ function header(){
                 <p id="pin"></p>
             </div>
         </div>
-        <div id="one" class="bottom_links"><span>Groceries</span><span class="down_arrow"></span>
+        <div id="one" class="bottom_links"><a style="color:black; text-decoration:none;" href="selection.html"><span>Groceries</span></a><span class="down_arrow"></span>
             <div id="d1" class="ddown">
                 <div>
-                    <a href="">Fruits & Vegetables</a>
-                    <a href="">Dairy & Bakery</a>
-                    <a href="">Staples</a>
-                    <a href="">Snacks & Branded Foods</a>
-                    <a href="">Beverages</a>
-                    <a href="">Personal Care</a>
+                    <a href="selection.html">Fruits & Vegetables</a>
+                    <a href="selection.html">Dairy & Bakery</a>
+                    <a href="selection.html">Staples</a>
+                    <a href="selection.html">Snacks & Branded Foods</a>
+                    <a href="selection.html">Beverages</a>
+                    <a href="selection.html">Personal Care</a>
                 </div>
                 <div>
-                    <a href="">Home Care</a>
-                    <a href="">Home & Kitchen</a>
-                    <a href="">Mom & Baby Care</a>
-                    <a href="">Books</a>
-                    <a href="">Pets</a>
+                    <a href="selection.html">Home Care</a>
+                    <a href="selection.html">Home & Kitchen</a>
+                    <a href="selection.html">Mom & Baby Care</a>
+                    <a href="selection.html">Books</a>
+                    <a href="selection.html">Pets</a>
                 </div>
             </div>
         </div>
