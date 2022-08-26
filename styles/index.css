@@ -6,6 +6,7 @@
 }
 
 .header {
+    display: none;
     position: fixed;
     top: 0;
     width: 100%;
@@ -37,6 +38,111 @@
     background-color: #ECECED;
     line-height: 20px;
     gap: 90px;
+}
+
+#d1 {
+    width: 400px;
+    display: none;
+    justify-content: space-between;
+}
+
+#d1>div {
+    width: 50%;
+    text-align: left;
+}
+
+#d1>div:nth-child(2) {
+    border-left: 1px solid lightgray;
+}
+
+#d2 {
+    width: 400px;
+    display: none;
+    justify-content: space-between;
+}
+
+#d2>div {
+    width: 50%;
+    text-align: left;
+}
+
+#d2>div:nth-child(2) {
+    border-left: 1px solid lightgray;
+}
+
+#d3 {
+    width: 400px;
+    display: none;
+    justify-content: space-between;
+}
+
+#d3>div {
+    width: 50%;
+    text-align: left;
+}
+
+#d3>div:nth-child(2) {
+    border-left: 1px solid lightgray;
+}
+
+#d4 {
+    width: 200px;
+    display: none;
+}
+
+#d5 {
+    width: 200px;
+    display: none;
+}
+
+#d6 {
+    width: 200px;
+    display: none;
+}
+
+.ddown {
+    position: absolute;
+    top: 110px;
+    background-color: #ECECED;
+    z-index: 1;
+}
+
+.ddown a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.ddown a:hover {
+    background-color: white;
+    color: #008ECC;
+}
+
+#one:hover #d1 {
+    display: flex;
+}
+
+#two:hover #d2 {
+    display: flex;
+}
+
+#three:hover #d3 {
+    display: flex;
+}
+
+#four:hover #d4 {
+    display: block;
+}
+
+#five:hover #d5 {
+    display: block;
+}
+
+#six:hover #d6 {
+    display: block;
 }
 
 #burger {
@@ -128,8 +234,9 @@
     top: -6px;
     width: 14px;
     height: 14px;
+    line-height: 14px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #DD0608;
     color: white;
     font-size: 11px;
     text-align: center;
@@ -151,6 +258,11 @@
     background-size: 100%;
 }
 
+#location div p {
+    margin: 0;
+    padding: 0;
+}
+
 .down_arrow {
     display: block;
     background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/chevron-down.svg) center no-repeat;
@@ -167,12 +279,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    height: 100%;
 }
 
-#carousel1 {
+#myCarousel {
     width: 100%;
     height: 320px;
-    margin-top: 130px;
+    /* margin-top: 130px; */
 }
 
 .imgs {
@@ -277,17 +391,16 @@ h2 {
     padding: 10px 0;
 }
 
-#top_deals,
+/* #top_deals,
 #recommended {
     width: 95%;
     height: 314px;
-    border: 1px solid;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
-}
+} */
 
 #carousel2 {
     width: 95%;
@@ -415,7 +528,7 @@ h2 {
     transform: scale(1.05);
 }
 
-#footer_container{
+#footer_container {
     background-color: #EDEDEF;
 }
 
@@ -424,7 +537,7 @@ h2 {
     color: #008ECC;
 }
 
-#footer{
+#footer {
     margin: auto;
     height: 419px;
     display: flex;
@@ -434,48 +547,208 @@ h2 {
     gap: 50px;
 }
 
-#footer ul, #footer p{
+#footer ul,
+#footer p {
     list-style: none;
     color: #616162;
 }
 
-#footer p{
+#footer p {
     margin-bottom: 10px;
 }
 
-ul{
+ul {
     line-height: 22px;
 }
 
-h5{
+h5 {
     margin-bottom: 12px;
     font-size: 12px;
 }
 
-#footer > div:nth-child(1){
+#footer>div:nth-child(1) {
     width: 178px;
     margin-top: 50px;
 }
 
-#footer > div:nth-child(2){
+#footer>div:nth-child(2) {
     width: 165px;
     margin-top: 50px;
 }
-#footer > div:nth-child(3){
+
+#footer>div:nth-child(3) {
     width: 300px;
     margin-top: 50px;
     border-left: 1px solid gray;
     padding: 0 25px;
 }
 
-#dapp{
+#dapp {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#f_bottom{
+
+#f_bottom {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
     border-top: 1px solid rgb(204, 202, 202);
     font-size: 12px;
+}
+
+.s_container {
+    width: 0px;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: white;
+    overflow-x: scroll;
+    transition: all .25s ease-in-out;
+}
+
+.s_header {
+    background-color: #008ECC;
+    padding: 10px;
+}
+
+.myicon {
+    color: white;
+    display: block;
+    cursor: pointer;
+}
+
+.s_upper {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.s_upper>div:nth-child(1) {
+    width: 27px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.s_lower {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.s_lower a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 45%;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.s_list {
+    padding: 15px;
+}
+
+.s_list li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.line {
+    height: 3px;
+    background-color: #616162;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bolder;
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.mrp {
+    color: #000;
+    font-weight: lighter;
+}
+
+.lined {
+    text-decoration: line-through;
+    color: #000;
+    font-weight: lighter;
+}
+
+.save {
+    color: #00a100;
+    font-weight: bolder;
+}
+
+.topview a {
+    float: right;
+    margin-top: -50px;
+    margin-right: 60px;
+    text-decoration: none;
+    color: red;
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    background-color: #008ECC;
+    color: white;
+    outline: none;
+}
+
+.topview h1 {
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+.seen {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+.closeupsurf {
+    width: 95%;
+    height: 314px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    gap: 15px;
+}
+
+.closeupsurf>div {
+    border: 1px solid rgba(111, 114, 132, 0.25);
+    align-items: center;
+    border-radius: 5px;
+    width: 180px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.allinfo {
+    width: 100%;
+}
+
+.closeupsurf img {
+    transition: all 0.2s ease-in-out;
+}
+
+.closeupsurf img:hover {
+    transform: scale(0.9);
 }

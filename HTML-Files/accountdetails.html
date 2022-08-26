@@ -21,10 +21,10 @@
                     <div id="image">
                         <img src="https://www.jiomart.com/msassets/images/icons/profile_white.svg" alt="">
                     </div>
-                    <div>
+                    <div class="name-section">
                         <h4>Name</h4>
                         <p id="mail">Email</p>
-                        <p>Number</p>
+                        <p id="num">Number</p>
                     </div>
                 </div>
                 <div class="payment">
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="account-information">
-            <div class="account-information-upper">
+            <div id="account-information-upper">
                 <p id="heading">Account Information</p>
 
                 <button id="term" onclick="show()">Edit</button>
@@ -55,26 +55,26 @@
                 <div>
                     <div class="name">
                         <p id="frstp">Full Name</p>
-                        <p>Customer Name</p>
+                        <p class="lastp">Customer Name</p>
                     </div>
                     <div class="name">
                         <p id="frstp">Email id</p>
-                        <p>Customer Email id</p>
+                        <p class="lastp" >Customer Email id</p>
                     </div>
                 </div>
                 
                 <div>
                     <div class="name">
                         <p id="frstp">AGE</p>
-                        <p>Customer AGE</p>
+                        <p class="lastp">Customer AGE</p>
                     </div >
                     <div class="name">
                         <p id="frstp">Mobile Number</p>
-                        <p>Customer Mobile Number</p>
+                        <p class="lastp">Customer Mobile Number</p>
                     </div>
                     <div class="name">
                         <p id="frstp">Default Address</p>
-                        <p>Customer Default Address</p>
+                        <p class="lastp">Customer Default Address</p>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@
 
     <div class="edit-modal">
         
-         <div class="edit">
+        <div class="edit">
             <div class="cross-red">
                 <button class="color-red-cross" onclick="cl()"><img src="https://www.jiomart.com/msassets/images/icons/close_red.svg" alt=""></button>
             </div>
@@ -145,16 +145,16 @@
 </body>
 </html>
 
-<!-- <script>
+<script>
     let show =()=>{
-        document.querySelector(".edit").style.display="block"
+        document.querySelector(".edit-modal").style.display="flex"
         
     }
 
     let cl =()=>{
       
-        document.querySelector(".edit").style.display="none"
+        document.querySelector(".edit-modal").style.display="none"
        
     }
 
-</script> -->
+</script>
