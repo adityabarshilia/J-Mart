@@ -11,6 +11,9 @@ let signUpData = JSON.parse(localStorage.getItem('signupData'));
 let msg = document.getElementById('msg');
 
 
+
+
+
 currentLocation();
 
 header_div.innerHTML = header();
@@ -38,6 +41,7 @@ if(signUpData !== null){
     sibtn.innerText = signUpData.firstname + signUpData.lastname;
     msg.innerText = `Hello, ${signUpData.firstname + signUpData.lastname}`;
     msg.style.marginLeft = '-100px';
+    sibtn.href = "accountdetails.html";
 }
 
 Addbtns.forEach(val => val.addEventListener('click', () => {

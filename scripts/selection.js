@@ -3,14 +3,13 @@ import footer from './footer.js';
 
 let footer_div = document.querySelector('footer');
 let nav = document.querySelector('nav');
+let signUpData = JSON.parse(localStorage.getItem('signupData'));
 
 
 footer_div.innerHTML = footer();
 nav.innerHTML = header();
 nav.style.width = "100%";
 footer_div.style.width = "100%";
-
-let display_pin = document.getElementById('pin');
 
 
 // Get Data 
@@ -19,6 +18,15 @@ currentLocation();
 
 let count_display = document.getElementById('cart_counter');
 let cart_count;
+let sibtn = document.getElementById('si_btn');
+let display_pin = document.getElementById('pin');
+
+
+if(signUpData !== null){
+    sibtn.innerText = signUpData.firstname + signUpData.lastname;
+    sibtn.href = "accountdetails.html";
+}
+
 
 displayCount();
 
@@ -30,7 +38,13 @@ function counter(){
 
 function displayCount(){
     cart_count = JSON.parse(localStorage.getItem('count'))||0;
-    count_display.innerText = +cart_count;
+
+    if(cart_count > 0) {
+        count_display.innerText = +cart_count;
+        count_display.style.display = "block";
+    }else{
+        count_display.style.display = "none";
+    }
 }
 
 

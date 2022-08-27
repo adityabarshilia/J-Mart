@@ -2,8 +2,9 @@
     display: none;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    height: 112px;
+    /* height: 112px; */
     background-color: aliceblue;
     z-index: 10;
 }
@@ -139,8 +140,8 @@
 }
 
 #burger {
-    width: 32px;
-    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
     cursor: pointer;
     background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/burger_menu.svg) center no-repeat;
     background-size: 100%;
@@ -275,3 +276,94 @@
     cursor: pointer;
     height: 100%;
 }
+
+@media screen and (max-width: 1234px) {
+    #search5 {
+        width: 400px;
+    }  
+    .header{
+        transform: scale(1.05);
+    }
+    .lower{
+        gap: 70px;
+    }
+ }
+
+
+
+ @media screen and (max-width: 1000px) {
+    #search5 {
+        width: 400px;
+    }  
+    .header{
+        transform: scale(1.10);
+    }
+
+    .upper{
+        height: 80px;
+    }
+    .lower{
+        height: 45px;
+    }
+}
+
+  @media screen and (max-width: 850px) {
+    #search5 {
+        width: 300px;
+    }  
+    .header{
+        transform: scale(1.27);
+    }
+    .upper{
+        height: 100px;
+        padding-top: 20px;
+    }
+    .lower{
+        height: 65px;
+        gap: 40px; 
+    }
+  } 
+
+ @media screen and (max-width: 660px) {
+    #search5 {
+        width: 200px;
+    }  
+    .header{
+        transform: scale(1.50);
+    }
+    .upper{
+        height: 130px;
+        padding-top: 40px;
+    }
+    .lower{
+        height: 85px;
+        gap: 25px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    
+    .header{
+        transform: scale(1.60);
+    }
+    .upper{
+        height: 160px;
+        padding-top: 50px;
+        gap: 20px;
+    }
+    .lower{
+        height: 100px;
+        gap: 15px;
+    }
+    
+  }
+
+  /* @media screen and (max-width: 700px) {
+    #search5 {
+        width: 400px;
+    }  
+    .header{
+        transform: scale(1.10);
+    }
+  }  */
+

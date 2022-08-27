@@ -1,10 +1,10 @@
 function header(){
     return `<div class="upper">
         <div id="burger"></div>
-        <div id="logo"></div>
+        <a href ="index.html"><div id="logo"></div></a>
         <div id="searchdiv"><input type="text" id="search5"
                 placeholder="Search essentials, groceries, and more ..."><span id="searchburger"></span></div>
-        <div id="accdiv"><span id="account"></span id="acctext"><span><a id="si_btn" style="color:white; text-decoration:none; cursor:pointer;" href="HTML-Files/signin.html">Sign in / Sign up</a></span></div>
+        <div id="accdiv"><span id="account"></span id="acctext"><span><a id="si_btn" style="color:white; text-decoration:none; cursor:pointer;" href="signin.html">Sign in / Sign up</a></span></div>
         <div id="cartdiv"><span id="cart"></span id="carttext"><a style="color:white; cursor:pointer; text-decoration:none;" href="card.html"><span>Cart</span></a><span id="cart_counter">0</span>
         </div>
     </div>
