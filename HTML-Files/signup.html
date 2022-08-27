@@ -6,26 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://www.jiomart.com/msassets/favicon.svg?v2"  >
     <title>Buy Grocery Online at Best Prices Pan India</title>
+    
     <link rel="stylesheet" href="../styles/signup.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/header.css">
     <style>
         .verify-next-line{
             position: relative;
         }
+
         #resOTP{
             position: absolute;
             right: 0;
-            bottom: -60px;
+            bottom: -57px;
+            color: red;
             cursor: pointer;
         }
+
         #waitingotp{
             position: absolute;
             left: 0;
-            bottom: -60px;
+            bottom: -70px;
             color: rgb(165, 165, 165);
-            display: none;
+            /* display: none; */
         }
-        .active{
+         .active{
             display: block;
         }
         .hide{
@@ -42,15 +47,18 @@
             cursor: pointer;
             color: gray;
         }
-        /* .pnone{
+        .pnone{
             display: none;
         }
         .pvis{
             display: block;
-        } */
+        }
     </style>
 </head>
 <body>
+
+    <nav></nav>
+
     <div class="main-container">
         <div>
             <img id="banner" src="https://www.jiomart.com/msassets/images/login-banner.jpg" alt="login-banner">
@@ -93,10 +101,10 @@
                     <div class="verify-next-line">
                         <p id="verify-next-lines">We have sent 6 digit OTP on <b>+91-<span id="getNumber"></span></b></p>
                         <a href="signin.html" id="term">Change</a>
+                        <a style="display: none;" id="resOTP" id="term">Resend OTP</a>
+                        <p id="waitingotp" >Waiting for OTP... <span id="otptimer"></span> Sec</p>
                     </div>
                     <input type="text" id="otp" placeholder="Enter your OTP">
-                    <a style="display: none;" id="resOTP" id="term">Resend OTP</a>
-                    <p id="waitingotp" >Waiting for OTP... <span id="otptimer"></span> Sec</p>
                     <!-- <p id="waitingotp">Waiting for OTP... <span id="otptimer"></span> Sec</p> -->
                     <!-- <button id="resOTP" style="display: none;">Resend OTP</button> -->
                     <button id="bttn"><a href="#">Verify</a></button>
@@ -110,4 +118,4 @@
     
 </body>
 </html>
-<script src="../scripts/signup.js"></script>
+<script src="../scripts/signup.js" type="module"></script>

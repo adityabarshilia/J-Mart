@@ -1,3 +1,4 @@
+import header from '../scripts/header.js';
 
 let form = document.querySelector("form");
 let otptimer = document.getElementById("otptimer");
@@ -5,9 +6,21 @@ let resend = document.getElementById("resOTP");
 let otp = document.getElementById("otp");
 let waitingotp = document.getElementById("waitingotp");
 let verifybtn = document.getElementById("bttn");
+let showMob = document.getElementById("getNumber");
+let mobile = JSON.parse(localStorage.getItem('mob'));
 let timer = 40;
 let validotp = 12345;
 let id;
+
+showMob.innerText = mobile;
+
+let nav = document.querySelector('nav');
+nav.innerHTML = header();
+nav.style.width = "100%";
+
+let display_pin = document.getElementById('pin');
+
+currentLocation();
 
 verifybtn.addEventListener("click", () => {
   let signUpData = {
@@ -23,7 +36,6 @@ verifybtn.addEventListener("click", () => {
     localStorage.setItem("signupData", JSON.stringify(signUpData));
     console.log("yes");
     window.location.href = "../index.html";
-    
     console.log(window.location.href)
   }
 });
@@ -46,7 +58,6 @@ function otpCountdown() {
 
     if (timer == 0) {
       otptimer.innerText = timer;
-      // timer = 40;
       resend.style.display = "block";
       waitingotp.style.display = "none";
       alert("resend otp");
@@ -134,6 +145,37 @@ chpass.addEventListener("click", function(){
     cpass.style.display = "block";
     document.querySelector(".chpass").style.display = "none";
 });
+
+
+function currentLocation(){
+  const options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0
+  };
+
+  async function success(pos) {
+  const crd = pos.coords;
+  // console.log(crd);
+
+  let res = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${crd.latitude}&lon=${crd.longitude}&limit=5&appid=63c3704e63cc40d74ad87bdb9f68f3b8`);
+  let data = await res.json();
+  let city = data[0].name;
+  // console.log(city)
+
+  let res2 = await fetch(`https://api.postalpincode.in/postoffice/${city}`);
+  let data2 = await res2.json();
+  console.log(data2[0].PostOffice[0].Pincode)
+  display_pin.innerText = data2[0].PostOffice[0].Pincode;
+  }
+
+
+  function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`);
+  }
+
+  navigator.geolocation.getCurrentPosition(success, error, options);
+}
 
 
 
