@@ -337,6 +337,10 @@ h2 {
 }
 
 #slider1 {
+
+
+
+    /* older */
     width: 90%;
     margin: auto;
     display: flex;
@@ -345,6 +349,8 @@ h2 {
     margin-bottom: 50px;
 }
 
+
+/* old */
 #slider1 >div {
     width: 180px;
     height: 226px;
