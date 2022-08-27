@@ -16,6 +16,8 @@ let availableAmt = document.getElementById('available-amt');
 let mrp = document.getElementById('mrp');
 let totalMRP = document.querySelector('#tota-price');
 
+
+
 function DisplayProducts(data) {
 
 

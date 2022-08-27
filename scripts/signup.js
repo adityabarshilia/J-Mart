@@ -34,6 +34,7 @@ form.addEventListener("submit", (e) => {
     lastname: form.lname.value,
     email: form.emailid.value,
     password: form.password.value,
+    mobile: mobile,
   };
 
   if (pwd.value !== cpwd.value) {
