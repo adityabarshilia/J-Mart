@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://www.jiomart.com/msassets/favicon.svg?v2"  >
+    <link rel="icon" href="https://www.jiomart.com/msassets/favicon.svg?v2">
     <title>Buy Grocery Online at Best Prices Pan India</title>
-    
+
     <link rel="stylesheet" href="styles/signup.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/header.css">
     <style>
-        .verify-next-line{
+        .verify-next-line {
             position: relative;
         }
 
-        #resOTP{
+        #resOTP {
             position: absolute;
             right: 0;
             bottom: -57px;
@@ -23,38 +24,72 @@
             cursor: pointer;
         }
 
-        #waitingotp{
+        #waitingotp {
             position: absolute;
             left: 0;
             bottom: -70px;
             color: rgb(165, 165, 165);
             /* display: none; */
         }
-         .active{
+
+        #wotp{
+            display: none;
+            position: absolute;
+            left: 0;
+            bottom: -70px;
+            color: red;
+        }
+
+        .active {
             display: block;
         }
-        .hide{
+
+        .hide {
             display: none;
         }
-        .input-control{
+
+        .input-control {
             position: relative;
             width: 90%;
         }
-        .input-control > i{
+
+        .input-control>i {
             position: absolute;
             right: 10px;
             top: 12px;
             cursor: pointer;
             color: gray;
         }
-        .pnone{
+
+        .pnone {
             display: none;
         }
-        .pvis{
+
+        .pvis {
             display: block;
+        }
+
+        #password:invalid{
+            border: red solid 2px;
+        }
+        #password:valid{
+            border: green solid 2px;
+        }
+        #bttn{
+            width: 100%;
+            padding: 8px;
+            border-radius: 7px;
+            margin-bottom: 15px;
+            text-align: center;
+            cursor: pointer;
+            color: white;
+        }
+        #cmsg{
+            color: red;
         }
     </style>
 </head>
+
 <body>
 
     <nav></nav>
@@ -66,7 +101,7 @@
         <div>
             <p id="signup">Sign up</p>
             <div class="form-fill">
-                <form action="#">
+                <form>
                     <p id="next-line">Please enter your details.</p>
                     <div class="input-control">
                         <input type="text" id="fname" placeholder="Your First Name">
@@ -78,44 +113,54 @@
                         <input type="email" id="emailid" placeholder="Enter your Email Id">
                     </div>
                     <div class="input-control">
-                        <input type="password" id="password" placeholder="Enter your Password">
+                        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            placeholder="Enter your Password" required>
                         <i class="fa-solid fa-eye pass"></i>
                         <i class="fa-solid fa-eye-slash hpass" style="display: none;"></i>
                     </div>
-                    <p id="password-condition">Use 8 or more characters with a mix of letters & numbers</p>
+                    <p class="msgs">Use 8 or more characters with a mix of letters & numbers</p>
 
                     <!-- <input type="password" id="password" placeholder="Enter your Password"> -->
 
                     <div class="input-control">
-                        <input type="password" id="cpassword" placeholder="Enter your Password">
+                        <input type="password" id="cpassword" placeholder="Confirm your Password" required>
                         <i class="fa-solid fa-eye cpass"></i>
                         <i class="fa-solid fa-eye-slash chpass" style="display: none;"></i>
                     </div>
+                    <p class="msgs" id="cmsg"></p>
 
                     <div class="get-notification-whatsapp">
-                        <img id="whatsappicon" src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/whatsapp-512.png" alt="whatsapp">
+                        <img id="whatsappicon"
+                            src="https://cdn3.iconfinder.com/data/icons/social-media-chamfered-corner/154/whatsapp-512.png"
+                            alt="whatsapp">
                         <p id="text">Enable order updates and important information on Whatsapp</p>
                         <input type="checkbox" id="checkbox">
                     </div>
                     <p id="verify">Verify</p>
                     <div class="verify-next-line">
-                        <p id="verify-next-lines">We have sent 6 digit OTP on <b>+91-<span id="getNumber"></span></b></p>
+                        <p id="verify-next-lines">We have sent 6 digit OTP on <b>+91-<span id="getNumber"></span></b>
+                        </p>
                         <a href="signin.html" id="term">Change</a>
                         <a style="display: none;" id="resOTP" id="term">Resend OTP</a>
-                        <p id="waitingotp" >Waiting for OTP... <span id="otptimer"></span> Sec</p>
+                        <p id="waitingotp">Waiting for OTP... <span id="otptimer"></span> Sec</p>
+                        <p id="wotp">Incorrect OTP!</p>
                     </div>
                     <input type="text" id="otp" placeholder="Enter your OTP">
+            
                     <!-- <p id="waitingotp">Waiting for OTP... <span id="otptimer"></span> Sec</p> -->
                     <!-- <button id="resOTP" style="display: none;">Resend OTP</button> -->
-                    <button style="cursor: pointer; color: white" id="bttn">Verify</button>
+                    <input type="submit" id="bttn" value="Verify">
                 </form>
             </div>
         </div>
     </div>
     <div class="terms-condition">
-        <p id="ptag">By continuing you agree to our <span><a href="#" id="terms">Terms of service</a></span> and <span><a href="#" id="terms">Privacy & Legal Policy.</a></span></p>
+        <p id="ptag">By continuing you agree to our <span><a href="#" id="terms">Terms of service</a></span> and
+            <span><a href="#" id="terms">Privacy & Legal Policy.</a></span></p>
     </div>
-    
+
 </body>
+
 </html>
 <script src="scripts/signup.js" type="module"></script>

@@ -111,7 +111,7 @@ input[type="password"],form input[type="text"],input[type="email"],button{
     margin: auto;
     text-align: center;
 }
-#password-condition{
+.msgs{
     font-size: 13px;
     margin-top: -40px;
     color: rgb(103,103,103);

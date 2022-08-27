@@ -41,6 +41,7 @@ if(signUpData !== null){
     sibtn.innerText = signUpData.firstname + signUpData.lastname;
     msg.innerText = `Hello, ${signUpData.firstname + signUpData.lastname}`;
     msg.style.marginLeft = '-100px';
+    sibtn.href = "accountdetails.html";
 }
 
 Addbtns.forEach(val => val.addEventListener('click', () => {
