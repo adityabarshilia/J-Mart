@@ -15,17 +15,33 @@
     <link rel="stylesheet" href="styles/header.css">
 
 
+    
     <style>
-        #slider1{
-            overflow-x: scroll;
-            overflow-y: hidden;
+        /* #slider1{
+            width: 90%;
+            height: 300px;
+            border: 1px solid red;
+            overflow-x: auto;
+            
         }
-        #slider1 > div{
+        .wrapper {
+            min-width: 80%;
+            max-width: 80%;
+            height: 95%;
+            overflow-x: auto;
+            border: 1px solid yellow;
+            display: flex;
+        }
+
+         .wrapper>div{
+          width: 250px;
+          height: 200px;
           margin: 0 10px;
+          border : 1px solid blue;
         }
-        /* #slider1::-webkit-scrollbar{
+         #slider1::-webkit-scrollbar{ 
             width: 10px;
-        } */
+        }  */
     </style>
 
 
@@ -202,10 +218,15 @@
     <h2>Shop from Top Categories</h2>
 
     <div id="slider1">
-        <div><img class="imgs"
+
+        <!-- slider wrapper -->
+        <!-- <div class="wrapper"> -->
+
+        <!--items-->
+        <div class="items"><img class="imgs"
                 src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109073_1654018509_Fruits-Veg.jpg" alt="">
         </div>
-        <div><img class="imgs"
+        <div class="items"><img class="imgs"
                 src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109088_1654018530_Beverage-Corner.jpg"
                 alt=""></div>
         <div><img class="imgs"
@@ -225,7 +246,7 @@
                 alt=""></div>
 
                 <!-- ///////////////////////////// -->
-                <div><img class="imgs"
+                <!-- <div><img class="imgs"
                     src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109143_1656693044_Foodgrains-Oils.jpg"
                     alt=""></div>
             <div><img class="imgs"
@@ -254,8 +275,10 @@
                         alt=""></div>
                 <div><img class="imgs"
                         src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109280_1654018629_Dairy-Bakery.jpg"
-                        alt=""></div>
+                        alt=""></div> -->
                         <!-- ////////////////////////////// -->
+            <!-- </div> -->
+           <!-- wrapper end -->
     </div>
 
     <div class="banner4"><img class="imgs_nc"
