@@ -11,6 +11,9 @@ let signUpData = JSON.parse(localStorage.getItem('signupData'));
 let msg = document.getElementById('msg');
 
 
+
+
+
 currentLocation();
 
 header_div.innerHTML = header();

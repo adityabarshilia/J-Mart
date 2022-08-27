@@ -22,7 +22,8 @@ let display_pin = document.getElementById('pin');
 
 currentLocation();
 
-verifybtn.addEventListener("click", () => {
+verifybtn.addEventListener("click", (e) => {
+e.preventDefault();
   let signUpData = {
     firstname: form.fname.value,
     lastname: form.lname.value,
@@ -35,16 +36,16 @@ verifybtn.addEventListener("click", () => {
   else {
     localStorage.setItem("signupData", JSON.stringify(signUpData));
     console.log("yes");
-    window.location.href = "../index.html";
-    console.log(window.location.href)
+    window.location.href = "index.html";
   }
 });
 
 resend.addEventListener("click", () => {
   timer = 40;
+  waitingotp.style.display = "block";
   otpCountdown();
   resend.style.display = "none";
-  waitingotp.style.display = "block";
+ 
 });
 
 otpCountdown();
@@ -60,7 +61,6 @@ function otpCountdown() {
       otptimer.innerText = timer;
       resend.style.display = "block";
       waitingotp.style.display = "none";
-      alert("resend otp");
       clearInterval(id);
     }
   }, 1000);

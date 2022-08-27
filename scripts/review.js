@@ -1,4 +1,8 @@
 
+setTimeout(() => {
+    document.getElementById('loading_screen').style.display = "none";
+}, 1500);
+
 let count = JSON.parse(localStorage.getItem("count")) || 0;
 // count++;
 

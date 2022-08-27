@@ -25,7 +25,7 @@ function DisplayProducts(data) {
 
     data.forEach(function (el) {
 
-        total += Number(el.price)
+        total += Number(el.price);
 
         let productItems = document.createElement('div');
         productItems.setAttribute('class', 'product-itemsdetails');

@@ -30,7 +30,13 @@ function counter(){
 
 function displayCount(){
     cart_count = JSON.parse(localStorage.getItem('count'))||0;
-    count_display.innerText = +cart_count;
+
+    if(cart_count > 0) {
+        count_display.innerText = +cart_count;
+        count_display.style.display = "block";
+    }else{
+        count_display.style.display = "none";
+    }
 }
 
 
