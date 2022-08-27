@@ -218,9 +218,10 @@
     <h2>Shop from Top Categories</h2>
 
     <div id="slider1">
-
+        <!-- button -->
+        <img src="https://www.jiomart.com/assets/version1661356103/smartweb/images/icons/left_arrow.svg" alt="" class="left-btn">
         <!-- slider wrapper -->
-        <!-- <div class="wrapper"> -->
+        <div class="wrapper">
 
         <!--items-->
         <div class="items"><img class="imgs"
@@ -246,7 +247,7 @@
                 alt=""></div>
 
                 <!-- ///////////////////////////// -->
-                <!-- <div><img class="imgs"
+                <div><img class="imgs"
                     src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109143_1656693044_Foodgrains-Oils.jpg"
                     alt=""></div>
             <div><img class="imgs"
@@ -275,10 +276,12 @@
                         alt=""></div>
                 <div><img class="imgs"
                         src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1657109280_1654018629_Dairy-Bakery.jpg"
-                        alt=""></div> -->
+                        alt=""></div>
                         <!-- ////////////////////////////// -->
-            <!-- </div> -->
+            </div>
            <!-- wrapper end -->
+           <!-- right btn -->
+           <img src="https://www.jiomart.com/assets/version1661356103/smartweb/images/icons/right_arrow.svg" alt="" class="right-btn">
     </div>
 
     <div class="banner4"><img class="imgs_nc"
@@ -827,6 +830,36 @@
     <div id="footer_container"></div>
 
 </body>
+
+<!-- script for sliding -->
+<script>
+    let sliderContainer = document.querySelector(".wrapper");
+    let rightBtn = document.querySelector(".right-btn");
+    let leftBtn = document.querySelector(".left-btn");
+
+    rightBtn.addEventListener("click", () => {
+        sideScroll(sliderContainer,"right",10,300,10)
+    })
+    leftBtn.addEventListener("click", () => {
+        sideScroll(sliderContainer,"left",10,300,10)
+    })
+
+    function sideScroll(element,direction,speed,distance,step){
+        scrollAmount = 0;
+        let slideTimer = setInterval(() => {
+            if(direction == 'left'){
+                element.scrollLeft -= step;
+            }else{
+                element.scrollLeft += step
+            }
+            scrollAmount += step;
+            if(scrollAmount >= distance){
+                window.clearInterval(slideTimer)
+            }
+        },speed);
+    }
+
+</script>
 
 </html>
 
