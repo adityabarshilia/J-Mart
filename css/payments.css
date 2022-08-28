@@ -28,7 +28,7 @@ body {
 #order-status {
     /* border: 1px solid goldenrod; */
     height: 50px;
-    margin: 3px 0px;
+    margin: 3px -9px;
     padding-bottom: 17px;
     display: flex;
     flex-grow: 5;
@@ -137,4 +137,35 @@ input[type=radio] {
 
 #btn-checkout:hover {
     cursor: pointer;
+}
+
+/* ------------------------ */
+
+@media all and (min-width:320px) and (max-width:768px) {
+
+    .title-box {
+        display: none;
+
+    }
+
+
+    #container {
+        margin-top: 25px;
+        ;
+    }
+
+    #container-box {
+        display: block;
+        /* background: #00a100; */
+
+    }
+
+    #leftbox-items {
+        width: 100%;
+    }
+
+    #rightbox-items {
+        margin-top: 20px;
+        width: 100%;
+    }
 }

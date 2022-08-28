@@ -1,4 +1,4 @@
-*{
+* {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
 }
@@ -18,7 +18,7 @@ nav {
 #container {
     width: 90%;
     margin: auto;
-    margin-top:  130px;
+    margin-top: 130px;
     /* border: 1px solid black; */
 }
 
@@ -150,9 +150,37 @@ nav {
     background: #fff;
     padding: 10px;
     margin: 0px 0px 10px 20px;
-    width: 92%;
+    width: 95%;
+
 
 }
+
+#coupon-box input {
+    width: 70%;
+    margin: 0;
+    height: 37px;
+    border: transparent;
+}
+
+input:focus {
+    outline: none;
+    border: 0;
+
+}
+
+#cimg {
+    margin: 0;
+    margin-bottom: -8px;
+    margin-left: 15px;
+}
+
+#couponApply {
+    background: transparent;
+    border: none;
+    color: gray;
+    margin-left: 4%;
+}
+
 
 #applypromo>div:first-child {
     display: flex;
@@ -165,10 +193,11 @@ nav {
 
 }
 
+/* 
 #applypromo>div:first-child>span>a {
     color: red;
     text-decoration: none;
-}
+} */
 
 #container-boxRight {
     width: 45%;
@@ -225,6 +254,33 @@ nav {
     float: right;
 }
 
-ul{
+ul {
     padding: 0;
+}
+
+/* media Queries */
+
+/* medium Screens  */
+
+@media all and (min-width:320px) and (max-width:768px) {
+
+    .card-title {
+        display: none;
+
+    }
+
+    .container-boxleft {
+        display: block;
+        /* background: #00a100; */
+
+    }
+
+    .cart-product {
+        width: 100%;
+    }
+
+    #container-boxRight {
+        margin-top: 20px;
+        width: 100%;
+    }
 }
