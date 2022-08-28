@@ -33,12 +33,13 @@ let Addbtns = document.querySelectorAll('.btn');
 let count_display = document.getElementById('cart_counter');
 // let signupData=JSON.parse(localStorage.getItem("data"))|| [];
 let sibtn = document.getElementById('si_btn');
+let sitext = document.getElementById('acctext');
 
 displayCount();
 
 
 if(signUpData !== null){
-    sibtn.innerText = signUpData.firstname + signUpData.lastname;
+    sitext.innerText = signUpData.firstname + signUpData.lastname;
     msg.innerText = `Hello, ${signUpData.firstname + signUpData.lastname}`;
     msg.style.marginLeft = '-100px';
     sibtn.href = "accountdetails.html";

@@ -18,6 +18,14 @@ let cart_count;
 displayCount();
 currentLocation();
 
+let sibtn = document.getElementById('si_btn');
+let sitext = document.getElementById('acctext');
+
+if(signUpData !== null){
+    sitext.innerText = signUpData.firstname + signUpData.lastname;
+    sibtn.href = "accountdetails.html";
+}
+
 function counter(){
     cart_count += 1;
     localStorage.setItem('count', JSON.stringify(cart_count));
