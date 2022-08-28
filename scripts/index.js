@@ -19,11 +19,11 @@ currentLocation();
 header_div.innerHTML = header();
 footer_div.innerHTML = footer();
 header_div.style.display = 'block';
-carousel1.style.marginTop = "130px";
-lc.style.marginTop = "130px";
-rc.style.marginTop = "130px";
-lc.style.height = "320px";
-rc.style.height = "320px";
+// carousel1.style.marginTop = "130px";
+// lc.style.marginTop = "130px";
+// rc.style.marginTop = "130px";
+// lc.style.height = "320px";
+// rc.style.height = "320px";
 
 let burger = document.getElementById('burger');
 let sidebar_con = document.querySelector('.s_container');

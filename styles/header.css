@@ -282,7 +282,7 @@
         width: 500px;
     }  
     .header{
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
     .lower{
         gap: 70px;
@@ -294,11 +294,12 @@
         width: 400px;
     }  
     .header{
-        transform: scale(1.10);
+        transform: scale(1.05);
     }
 
     .upper{
         height: 80px;
+        padding-top: 10px;
     }
     .lower{
         height: 45px;
@@ -311,11 +312,9 @@
         width: 300px;
     }  
     .header{
-        transform: scale(1.20);
+        transform: scale(1.07);
     }
     .upper{
-        height: 100px;
-        padding-top: 20px;
         gap: 30px;
     }
     .lower{
@@ -324,21 +323,12 @@
     }
   } 
 
- @media screen and (max-width: 660px) {
+
+  @media screen and (max-width: 1000px) {
     #search5 {
-        width: 200px;
-    }  
-    .header{
-        transform: scale(1.50);
+        width: 250px;
     }
-    .upper{
-        height: 130px;
-        padding-top: 40px;
-    }
-    .lower{
-        height: 85px;
-        gap: 55px;
-    }
+
     #acctext, #cartspan, .lower > div:nth-last-child(-n+3){
         display: none;
     }
@@ -346,32 +336,62 @@
     #cart_counter{
         left: -20px;
     }
-  }
 
-  @media screen and (max-width: 550px) {
+    .upper{
+        gap: 30px;
+    }
+
+    .lower{
+        gap: 70px;
+    }
+  } 
+  @media screen and (max-width: 700px) {
     #searchdiv {
         display: none;
-   }  
-    .header{
-        transform: scale(1.70);
-    }
-    .upper{
-        height: 160px;
-        padding-top: 50px;
-        gap: 80px;
-    }
-    .lower{
-        height: 100px;
-        gap: 20px;
-        transform: scale(1.20);
-        font-size: 15px;
-    }
-    .upper *{
-        transform: scale(1.15);
     }
 
-    .lower *{
-        transform: scale(1.03);
+    .header{
+        transform: scale(1.10);
+    }
+
+    .upper{
+        gap: 70px;
+    }
+
+    .lower{
+        gap: 40px;
+    }
+    
+  }
+
+  @media screen and (max-width: 567px) {
+
+    .header{
+        transform: scale(1.12);
+    }
+
+    .upper{
+        gap: 50px;
+    }
+
+    .lower{
+        gap: 20px;
+    }
+    
+  }
+
+  @media screen and (max-width: 499px) {
+
+    .upper{
+        gap: 30px;
+    }
+
+    .lower{
+        gap: 10px;
+    }
+
+    .lower > div:nth-child(2),.lower > div:nth-child(3),.lower > div:nth-child(4){
+        display: none;
     }
     
   }

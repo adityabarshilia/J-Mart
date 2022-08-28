@@ -287,7 +287,12 @@
 #myCarousel {
     width: 100%;
     height: 320px;
-    /* margin-top: 130px; */
+    margin-top: 150px;
+}
+
+#lc, #rc {
+    margin-top: 150px;
+    height: 320px;
 }
 
 .imgs {
@@ -553,7 +558,7 @@ h2 {
 #lower_women div,
 #lower_men div {
     width: 18%;
-    height: 330px;
+    height: 380px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -787,7 +792,9 @@ footer h5 {
 .allinfo {
     width: 100%;
 }
-
+.allinfo *{
+    margin-bottom: 5px;
+}
 .closeupsurf img {
     transition: all 0.2s ease-in-out;
 }
@@ -795,6 +802,14 @@ footer h5 {
 .closeupsurf img:hover {
     transform: scale(0.9);
 }
+
+@media screen and (max-width: 1050px) {
+
+    #myCarousel, #lc, #rc{
+        margin-top: 160px;
+    }
+}
+
 
 
 @media screen and (max-width: 1050px) {
@@ -806,15 +821,98 @@ footer h5 {
        height: auto;
        justify-items: center;
     }
-  } 
 
-  @media screen and (max-width: 750px) {
-    .closeupsurf {
-       display: grid;
+    .closeupsurf > div {
+        width: 250px;
+        height: 300px;
+    }    
+
+    #slider2, #offers_de,#lower_women, #lower_men{
+        display: grid;
        grid-template-columns: repeat(3,1fr);
        grid-template-rows: auto;
-       gap: 30px;
-       height: auto;
        justify-items: center;
+       height: auto;
+    }
+    #lower_women > div, #lower_men > div{
+        width: 100%;
+    }
+
+    #offers_de > div{
+        height: 250px;
+    }
+
+  } 
+
+  @media screen and (max-width: 844px) {
+    .closeupsurf {
+       grid-template-columns: repeat(2,1fr);
+    }
+
+    #carousel2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        height: auto;
+    }
+    #carousel2 > div{
+        width: 100%;
+    }
+
+    #offers_de{
+        grid-template-columns: repeat(2,1fr);
     }
   }
+
+  @media screen and (max-width: 654px) {
+    #lower_women, #lower_men, #slider2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #upper_women, #upper_men{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        height: auto;
+    }
+
+    #upper_women > div, #upper_men > div{
+        width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    #offers_de, .closeupsurf{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #offers_de > div{
+        width: 90%;
+        height: 300px;
+    }
+    .closeupsurf > div {
+        width: 70%;
+    } 
+  }
+
+  @media screen and (max-width: 450px) {
+    #lower_women, #lower_men, #slider2{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #slider2 > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       width: 70%;
+       height: 300px;
+    }
+    #slider2 div img{
+        height: 230px;
+    }
+
+    #lower_women > div, #lower_men > div{
+        width: 95%;
+    }
+  }
+  
