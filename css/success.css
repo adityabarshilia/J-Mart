@@ -123,37 +123,3 @@ body {
 .span-right {
     float: right;
 }
-
-
-
-/* @media screen  */
-
-@media all and (min-width:320px) and (max-width:768px) {
-
-    #container-box {
-        margin-top: 20px;
-    }
-
-    #container-box {
-        display: block;
-    }
-
-    #leftbox-items {
-        width: 100%;
-
-    }
-
-    #rightbox-items {
-        width: 100%;
-    }
-
-    #user-information {
-        display: block;
-
-    }
-
-    #btnOrder {
-        margin-top: 2%;
-        margin-left: 13%;
-    }
-}
