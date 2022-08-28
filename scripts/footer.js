@@ -1,6 +1,6 @@
 function footer(){
     return `<div id="footer">
-    <div>
+    <div id="f1">
         <h5 style="font-size:12px; font-weight:bold;">MOST POPULAR CATEGORIES</h5>
         <ul>
             <li>Staples</li>
@@ -13,7 +13,7 @@ function footer(){
             <li>Dairy & Bakery</li>
         </ul>
     </div>
-    <div>
+    <div id="f2">
         <h5 style="font-size:12px; font-weight:bold;">CUSTOMER SERVICES</h5>
         <ul>
             <li>About Us</li>
@@ -25,7 +25,7 @@ function footer(){
         </ul>
     </div>
 
-    <div>
+    <div id="f3">
         <h5 style="font-size:12px; font-weight:bold;">CONTACT US</h5>
         <p>WhatsApp us : <a
                 href="https://api.whatsapp.com/send/?phone=917000370003&text=Hi&type=phone_number&app_absent=0">70003

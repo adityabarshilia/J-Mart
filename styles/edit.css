@@ -23,7 +23,7 @@
     top: 0;
     display: none;
     justify-content: center;
-    
+    transition: all .2s ease-in-out;
 }
 
 .cross-red{
@@ -35,7 +35,7 @@
     padding: 20px;
     border-radius: 10px;
     position: relative;
-
+    transition: all .2s ease-in-out;
 }
 .customer-form{
     height: auto;

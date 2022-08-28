@@ -12,6 +12,17 @@
 .section-content-items > section:first-child{
     /* border: 1px solid black; */
 }
+/* ///////////////////////////////////////////// */
+@media screen and (max-width:1056px) {
+    .sidebar{
+        display: none;
+    }
+    .section-content-items{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* /////////////////////////////////////////////////// */
 
 
 .content-items > img{
@@ -215,3 +226,41 @@
 .pagination > button:hover{
     color: #007bff;
 }
+
+/* //////////////////////////////////////////// */
+@media screen and (max-width:834px) {
+    .filter-section > p:first-child{
+        display: none;
+    }
+    .cards-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:634px) {
+    .buttons-sortBy > p:first-child{
+        display: none;
+    }
+}
+
+@media screen and (max-width:568px) {
+   .filter-section{
+    display: none;
+   }
+   .content-cards{
+    margin-top: 10px;
+   }
+}
+@media screen and (max-width:502px) {
+   .section-path{
+    display: none;
+   }
+   .section-content-items{
+    margin-top: 5px;
+   }
+}
+@media screen and (max-width:404px) {
+    .cards-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+ }

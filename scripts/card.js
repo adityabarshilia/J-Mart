@@ -26,6 +26,11 @@
 
 
 
+
+
+function DisplayProducts(data) {
+
+
 // function DisplayProducts() {
 //     productDetails.innerHTML = null;
 //     let data = JSON.parse(localStorage.getItem("jiomart")) || [];
@@ -112,7 +117,11 @@
 
 //         productItems.append(product_img, productName,);
 
+
 //         productDetails.append(productItems, div);
+
+        total += Number(el.price);
+
 
 //         availableAmt.textContent = `₹${sum}`
 //         mrp.textContent = `₹${sum}`

@@ -2,10 +2,13 @@
     text-decoration: none;
     list-style: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
     background-color: rgb(246,246,247);
+    margin: 0;
+    padding: 0;
 }
 b{
     color: black;
@@ -20,6 +23,7 @@ b{
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
     gap: 120px;
+    margin-top: 50px;
     /* justify-content: space-between; */
     
 }
@@ -40,7 +44,7 @@ b{
     width: 93%;
     margin: auto;
 }
-input[type="password"],input[type="text"],input[type="email"],button{
+input[type="password"],form input[type="text"],input[type="email"],button{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -107,7 +111,7 @@ input[type="password"],input[type="text"],input[type="email"],button{
     margin: auto;
     text-align: center;
 }
-#password-condition{
+.msgs{
     font-size: 13px;
     margin-top: -40px;
     color: rgb(103,103,103);
@@ -120,4 +124,19 @@ input[type="password"],input[type="text"],input[type="email"],button{
 #bttn a{
     font-size: 18px;
     color: white;
+}
+/* ////////////////////////////// */
+@media screen and (max-width:1084px) {
+    .main-container > div:first-child{
+        display: none;
+    }
+    .main-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+    /* .main-container > div:nth-child(2){
+        border: 1px solid red;
+        width: 80%;
+        margin: 0 auto;
+    } */
 }

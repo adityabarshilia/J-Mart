@@ -11,16 +11,19 @@ let signUpData = JSON.parse(localStorage.getItem('signupData'));
 let msg = document.getElementById('msg');
 
 
+
+
+
 currentLocation();
 
 header_div.innerHTML = header();
 footer_div.innerHTML = footer();
 header_div.style.display = 'block';
-carousel1.style.marginTop = "130px";
-lc.style.marginTop = "130px";
-rc.style.marginTop = "130px";
-lc.style.height = "320px";
-rc.style.height = "320px";
+// carousel1.style.marginTop = "130px";
+// lc.style.marginTop = "130px";
+// rc.style.marginTop = "130px";
+// lc.style.height = "320px";
+// rc.style.height = "320px";
 
 let burger = document.getElementById('burger');
 let sidebar_con = document.querySelector('.s_container');
@@ -30,14 +33,16 @@ let Addbtns = document.querySelectorAll('.btn');
 let count_display = document.getElementById('cart_counter');
 // let signupData=JSON.parse(localStorage.getItem("data"))|| [];
 let sibtn = document.getElementById('si_btn');
+let sitext = document.getElementById('acctext');
 
 displayCount();
 
 
 if(signUpData !== null){
-    sibtn.innerText = signUpData.firstname + signUpData.lastname;
+    sitext.innerText = signUpData.firstname + signUpData.lastname;
     msg.innerText = `Hello, ${signUpData.firstname + signUpData.lastname}`;
     msg.style.marginLeft = '-100px';
+    sibtn.href = "accountdetails.html";
 }
 
 Addbtns.forEach(val => val.addEventListener('click', () => {

@@ -142,6 +142,7 @@ nav {
     /* border: 1px solid red; */
     /* height: 1800px; */
     display: flex;
+    margin-bottom: 50px;
 }
 
 #applypromo {

@@ -33,6 +33,14 @@ function updateAddress() {
 }
 
 
+setTimeout(() => {
+    document.getElementById('loading_screen').style.display = "none";
+}, 1500);
+
+let count = JSON.parse(localStorage.getItem("count")) || 0;
+// count++;
+
+
 let data = JSON.parse(localStorage.getItem("jiomart")) || [];
 
 let productDetails = document.querySelector('.product-details');

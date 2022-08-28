@@ -2,8 +2,9 @@
     display: none;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    height: 112px;
+    /* height: 112px; */
     background-color: aliceblue;
     z-index: 10;
 }
@@ -139,8 +140,8 @@
 }
 
 #burger {
-    width: 32px;
-    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
     cursor: pointer;
     background: url(https://www.jiomart.com/assets/version1659733069/smartweb/images/icons/burger_menu.svg) center no-repeat;
     background-size: 100%;
@@ -275,3 +276,123 @@
     cursor: pointer;
     height: 100%;
 }
+
+@media screen and (max-width: 1234px) {
+    #search5 {
+        width: 500px;
+    }  
+    .header{
+        transform: scale(1.02);
+    }
+    .lower{
+        gap: 70px;
+    }
+ }
+
+ @media screen and (max-width: 1148px) {
+    #search5 {
+        width: 400px;
+    }  
+    .header{
+        transform: scale(1.05);
+    }
+
+    .upper{
+        height: 80px;
+        padding-top: 10px;
+    }
+    .lower{
+        height: 45px;
+        gap: 40px;
+    }
+}
+
+  @media screen and (max-width: 1064px) {
+    #search5 {
+        width: 300px;
+    }  
+    .header{
+        transform: scale(1.07);
+    }
+    .upper{
+        gap: 30px;
+    }
+    .lower{
+        height: 65px;
+        gap: 35px; 
+    }
+  } 
+
+
+  @media screen and (max-width: 1000px) {
+    #search5 {
+        width: 250px;
+    }
+
+    #acctext, #cartspan, .lower > div:nth-last-child(-n+3){
+        display: none;
+    }
+
+    #cart_counter{
+        left: -20px;
+    }
+
+    .upper{
+        gap: 30px;
+    }
+
+    .lower{
+        gap: 70px;
+    }
+  } 
+  @media screen and (max-width: 700px) {
+    #searchdiv {
+        display: none;
+    }
+
+    .header{
+        transform: scale(1.10);
+    }
+
+    .upper{
+        gap: 70px;
+    }
+
+    .lower{
+        gap: 40px;
+    }
+    
+  }
+
+  @media screen and (max-width: 567px) {
+
+    .header{
+        transform: scale(1.12);
+    }
+
+    .upper{
+        gap: 50px;
+    }
+
+    .lower{
+        gap: 20px;
+    }
+    
+  }
+
+  @media screen and (max-width: 499px) {
+
+    .upper{
+        gap: 30px;
+    }
+
+    .lower{
+        gap: 10px;
+    }
+
+    .lower > div:nth-child(2),.lower > div:nth-child(3),.lower > div:nth-child(4){
+        display: none;
+    }
+    
+  }
+

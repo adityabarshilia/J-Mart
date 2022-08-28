@@ -3,6 +3,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
+    /* border: 1px solid; */
 }
 
 /* .header {
@@ -286,7 +287,12 @@
 #myCarousel {
     width: 100%;
     height: 320px;
-    /* margin-top: 130px; */
+    margin-top: 150px;
+}
+
+#lc, #rc {
+    margin-top: 150px;
+    height: 320px;
 }
 
 .imgs {
@@ -336,23 +342,65 @@ h2 {
     font-weight: 700;
 }
 
+
 #slider1 {
-    width: 90%;
+    /* new code  */
+    width: 100%;
+    height: 230px;
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    /* new code ends */
+    /* older */
+    /* width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 50px;
+    margin-bottom: 50px; */
 }
+.left-btn{
+    position: absolute;
+    left: 10px;
+    top: 40%;
+}
+.right-btn {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+}
+/* new code */
+.wrapper {
+    min-width: 93%;
+    max-width: 93%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+.wrapper::-webkit-scrollbar {
+    width: 0;
+    background-color: white;
+}
+.wrapper > div {
+    /* min-width: 100px; */
+    margin: 0 10px;
+    min-width: 180px;
+    height: 92%;
+    transition: all 0.3s linear;
+}
+/* new code end */
 
-#slider1 >div {
+/* old */
+/* #slider1 >div {
     width: 180px;
     height: 226px;
     cursor: pointer;
     transition: all .2s ease-in-out;
-}
+} */
 
-#slider1 div:hover {
+.wrapper > div:hover {
     transform: scale(1.05);
 }
 
@@ -510,7 +558,7 @@ h2 {
 #lower_women div,
 #lower_men div {
     width: 18%;
-    height: 330px;
+    height: 380px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -744,7 +792,9 @@ footer h5 {
 .allinfo {
     width: 100%;
 }
-
+.allinfo *{
+    margin-bottom: 5px;
+}
 .closeupsurf img {
     transition: all 0.2s ease-in-out;
 }
@@ -752,3 +802,117 @@ footer h5 {
 .closeupsurf img:hover {
     transform: scale(0.9);
 }
+
+@media screen and (max-width: 1050px) {
+
+    #myCarousel, #lc, #rc{
+        margin-top: 160px;
+    }
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .closeupsurf {
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: auto;
+       gap: 30px;
+       height: auto;
+       justify-items: center;
+    }
+
+    .closeupsurf > div {
+        width: 250px;
+        height: 300px;
+    }    
+
+    #slider2, #offers_de,#lower_women, #lower_men{
+        display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: auto;
+       justify-items: center;
+       height: auto;
+    }
+    #lower_women > div, #lower_men > div{
+        width: 100%;
+    }
+
+    #offers_de > div{
+        height: 250px;
+    }
+
+  } 
+
+  @media screen and (max-width: 844px) {
+    .closeupsurf {
+       grid-template-columns: repeat(2,1fr);
+    }
+
+    #carousel2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        height: auto;
+    }
+    #carousel2 > div{
+        width: 100%;
+    }
+
+    #offers_de{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  @media screen and (max-width: 654px) {
+    #lower_women, #lower_men, #slider2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #upper_women, #upper_men{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        justify-items: center;
+        height: auto;
+    }
+
+    #upper_women > div, #upper_men > div{
+        width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    #offers_de, .closeupsurf{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #offers_de > div{
+        width: 90%;
+        height: 300px;
+    }
+    .closeupsurf > div {
+        width: 70%;
+    } 
+  }
+
+  @media screen and (max-width: 450px) {
+    #lower_women, #lower_men, #slider2{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #slider2 > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       width: 70%;
+       height: 300px;
+    }
+    #slider2 div img{
+        height: 230px;
+    }
+
+    #lower_women > div, #lower_men > div{
+        width: 95%;
+    }
+  }
+  

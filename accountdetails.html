@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://www.jiomart.com/msassets/favicon.svg?v2"  >
     <title>Buy Grocery Online at Best Prices Pan India</title>
-    <link rel="stylesheet" href="../styles/accountdetais.css">
-    <link rel="stylesheet" href="../styles/edit.css">
+    <link rel="stylesheet" href="styles/accountdetais.css">
+    <link rel="stylesheet" href="styles/edit.css">
 </head>
 
 <body class="body">
@@ -22,7 +22,7 @@
                         <img src="https://www.jiomart.com/msassets/images/icons/profile_white.svg" alt="">
                     </div>
                     <div class="name-section">
-                        <h4>Name</h4>
+                        <h4 id="acc_name">Name</h4>
                         <p id="mail">Email</p>
                         <p id="num">Number</p>
                     </div>
@@ -55,26 +55,26 @@
                 <div>
                     <div class="name">
                         <p id="frstp">Full Name</p>
-                        <p class="lastp">Customer Name</p>
+                        <p id="1" class="lastp">Customer Name</p>
                     </div>
                     <div class="name">
                         <p id="frstp">Email id</p>
-                        <p class="lastp" >Customer Email id</p>
+                        <p  id="2" class="lastp" >Customer Email id</p>
                     </div>
                 </div>
                 
                 <div>
                     <div class="name">
-                        <p id="frstp">AGE</p>
-                        <p class="lastp">Customer AGE</p>
+                        <p id="frstp">Date Of Birth</p>
+                        <p id="5" class="lastp">Customer date of birth</p>
                     </div >
                     <div class="name">
                         <p id="frstp">Mobile Number</p>
-                        <p class="lastp">Customer Mobile Number</p>
+                        <p  id="3" class="lastp">Customer Mobile Number</p>
                     </div>
                     <div class="name">
                         <p id="frstp">Default Address</p>
-                        <p class="lastp">Customer Default Address</p>
+                        <p  id="4" class="lastp">Customer Default Address</p>
                     </div>
                 </div>
             </div>
@@ -110,18 +110,18 @@
             </div>
             <div class="customer-form">
                 <p class="edit-profile">EDIT PROFILE</p>
-                <form action="#">
+                <form>
                     <label for="#">FIRST NAME</label>
-                    <input type="text" id="" placeholder="Customer first name">
+                    <input type="text" id="fn" placeholder="Customer first name">
                     <label for="#">LAST NAME</label>
-                    <input type="text" id="" placeholder="Customer last name">
+                    <input type="text" id="ln" placeholder="Customer last name">
                    
                     <div class="box1">
                         <div class="genderbox">
                             <label for="">GENDER</label>
                             <select name="gender" id="gender">
-                                <option value="#">Male</option>
-                                <option value="#">Female</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
                                 <option value="#">Others</option>
                                 <option value="#">Unspecified</option>
                             </select>
@@ -132,9 +132,9 @@
                         </div>
                     </div>
                     <label for="#">EMAIL ID</label>
-                    <input type="email" name="" id="" placeholder="Customer email id">
+                    <input type="email" name="" id="eid" placeholder="Customer email id">
                     <label for="#">MOBILE NO</label>
-                    <input type="number" name="" id="" placeholder="Customer mobile no">
+                    <input type="number" name="" id="mobnum" placeholder="Customer mobile no">
                     <button type="submit" id="submit">Save Changes</button>
     
                 </form>
@@ -146,6 +146,48 @@
 </html>
 
 <script>
+
+    
+
+let signUpData = JSON.parse(localStorage.getItem('signupData'));
+let Mob = JSON.parse(localStorage.getItem('mob'));
+let address =  JSON.parse(localStorage.getItem('address'));
+
+let form = document.querySelector('form');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    let data = {
+        email: form.eid.value,
+        firstname: form.fn.value,
+        lastname: form.ln.value,
+        mobile: form.mobnum.value,
+        dateofbirth: form.dob.value,
+        gender: form.gender.value
+    }
+
+    localStorage.setItem('signupData', JSON.stringify(data));
+    window.location.href = 'accountdetails.html';
+})
+
+
+document.getElementById('acc_name').innerText = `${signUpData.firstname} ${signUpData.lastname}`;
+document.getElementById('1').innerText = `${signUpData.firstname} ${signUpData.lastname}`;
+document.getElementById('mail').innerText = signUpData.email;
+document.getElementById('2').innerText = signUpData.email;
+document.getElementById('num').innerText = `+91-${signUpData.mobile}`;
+document.getElementById('3').innerText = `+91-${signUpData.mobile}`;
+
+document.getElementById('4').innerText = `+91-${signUpData.mobile}`;
+
+if(signUpData.dateofbirth !== undefined) document.getElementById('5').innerText = signUpData.dateofbirth;
+// else document.getElementById('5').innerText = "asdasd";
+if(address !== null) document.getElementById('4').innerText = address.houseNo;
+
+
+    
+
     let show =()=>{
         document.querySelector(".edit-modal").style.display="flex"
         

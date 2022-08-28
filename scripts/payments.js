@@ -1,5 +1,6 @@
 
 
+
 let totalAmout = JSON.parse(localStorage.getItem('subTotal'));
 
 console.log(totalAmout);
@@ -34,3 +35,7 @@ saveTotal.innerText = `₹${dc}`;
 
 let totalMRP = document.querySelector('#totalMrp');
 totalMRP.innerText = `₹${ta}`;
+
+setTimeout(() => {
+    document.getElementById('loading_screen').style.display = "none";
+}, 1500);
