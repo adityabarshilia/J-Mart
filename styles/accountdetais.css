@@ -164,3 +164,36 @@ hr{
     width: 42%;
     margin-bottom: 20px;
 }
+
+/* ////////////////////////////// */
+
+
+@media screen and (max-width:1111px) {
+    .name-detail-section1{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .name-detail-section{
+        /* border: 1px solid black; */
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+
+.account-information{
+    width: 90%;
+    margin: 0 auto;
+}
+.logout-section{
+    width: 90%;
+    margin: 0 auto;
+}
+.last-section{
+    display: none;
+}
+}
+@media screen and (max-width:527px) {
+    .customer-details{
+        grid-template-columns: 1fr;
+    }
+}

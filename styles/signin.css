@@ -101,3 +101,44 @@ input::-webkit-inner-spin-button {
     margin: auto;
     text-align: center;
 }
+
+/* ///////////////////////////////// */
+@media screen and (max-width:1136px) {
+    .main-container > div:first-child{
+        display: none;
+        
+    }
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    .main-container > div:nth-child(2){
+        /* border: 1px solid red; */
+        padding-left: 200px;
+    }
+}
+@media screen and (max-width:920px) {
+    .main-container > div:nth-child(2){
+        padding-left: 100px;
+    }
+    #num{
+        width: 400px;
+    }
+    .mobile{
+        /* border: 1px solid black; */
+        width: 400px;
+    }
+}
+@media screen and (max-width:628px) {
+    .main-container > div:nth-child(2){
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #ptag{
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    .mobile{
+        width: 300px;
+    }
+}
