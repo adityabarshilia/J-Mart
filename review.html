@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>review</title>
-    <link rel="icon" href="https://www.jiomart.com/msassets/favicon.svg?v2"  >
+    <link rel="icon" href="https://www.jiomart.com/msassets/favicon.svg?v2">
 
     <link rel="stylesheet" href="css/rewiew.css">
 </head>
@@ -47,6 +47,38 @@
                 <div id="address-deatils">
                     <h3>Select Delivery Address</h3>
 
+
+                    <div id="detailsAdd">
+
+                        <div id="addrBox">
+                            <div style="display: flex;">
+                                <input type="radio" id="check">
+                                <h4 id="user">Indrajeet kumar</h4>
+                            </div>
+
+                            <!-- address Data  -->
+                            <div style="display: none;" id="addressData">
+                                <div><span id="hno">12</span></div>
+                                <div><span id="fno">5</span></div>
+                                <div> <span id="tno">6</span></div>
+                                <div> <span id="bname">ABC Building</span></div>
+                                <span id="addr">xyz Delhi</span>
+                                <span id="lm">xyz Delhi</span>
+
+                                <span id="pin">800001</span>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div style="display: none;" id="edit">
+                            <button onclick="updateAddress()" id="editbtn">Edit</button>
+                        </div>
+                    </div>
+
+                    <!-- address form  -->
                     <form id="address-form" action="">
                         <input type="text" name="" id="houseNo" placeholder="Flat/House No">
                         <input type="text" name="" id="floorNo" placeholder="Floor No">
@@ -55,7 +87,8 @@
                         <input type="text" name="" id="address" placeholder="Address*">
 
                         <input type="text" name="" id="landmark" placeholder="Landmark/Area*">
-                        <button id="address-btn">Save Address</button>
+                        <input type="number" id="pinCode" placeholder="enter your pin">
+                        <input id="address-btn" type="submit" value="save Address">
 
                     </form>
 
@@ -137,7 +170,7 @@
                         <div>
 
                             <label>Product Discount</label>
-                            <span class="span-right" id="">₹0.00</span>
+                            <span class="span-right" id="dis-Coupon">₹0.00</span>
                             <hr>
                         </div>
 
@@ -167,3 +200,11 @@
 </html>
 
 <script src="scripts/review.js"></script>
+
+
+<script>
+
+
+
+
+</script>
