@@ -337,29 +337,65 @@ h2 {
     font-weight: 700;
 }
 
+
 #slider1 {
+    /* new code  */
+    width: 100%;
+    height: 230px;
+    display: grid;
+    place-items: center;
+    position: relative;
 
-
-
+    /* new code ends */
     /* older */
-    width: 90%;
+    /* width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 50px;
+    margin-bottom: 50px; */
 }
-
+.left-btn{
+    position: absolute;
+    left: 10px;
+    top: 40%;
+}
+.right-btn {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+}
+/* new code */
+.wrapper {
+    min-width: 93%;
+    max-width: 93%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+.wrapper::-webkit-scrollbar {
+    width: 0;
+    background-color: white;
+}
+.wrapper > div {
+    /* min-width: 100px; */
+    margin: 0 10px;
+    min-width: 180px;
+    height: 92%;
+    transition: all 0.3s linear;
+}
+/* new code end */
 
 /* old */
-#slider1 >div {
+/* #slider1 >div {
     width: 180px;
     height: 226px;
     cursor: pointer;
     transition: all .2s ease-in-out;
-}
+} */
 
-#slider1 div:hover {
+.wrapper > div:hover {
     transform: scale(1.05);
 }
 
