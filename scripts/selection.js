@@ -19,11 +19,12 @@ currentLocation();
 let count_display = document.getElementById('cart_counter');
 let cart_count;
 let sibtn = document.getElementById('si_btn');
+let sitext = document.getElementById('acctext');
 let display_pin = document.getElementById('pin');
 
 
 if(signUpData !== null){
-    sibtn.innerText = signUpData.firstname + signUpData.lastname;
+    sitext.innerText = signUpData.firstname + signUpData.lastname;
     sibtn.href = "accountdetails.html";
 }
 

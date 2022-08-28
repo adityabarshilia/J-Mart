@@ -4,8 +4,9 @@ function header(){
         <a href ="index.html"><div id="logo"></div></a>
         <div id="searchdiv"><input type="text" id="search5"
                 placeholder="Search essentials, groceries, and more ..."><span id="searchburger"></span></div>
-        <div id="accdiv"><span id="account"></span id="acctext"><span><a id="si_btn" style="color:white; text-decoration:none; cursor:pointer;" href="signin.html">Sign in / Sign up</a></span></div>
-        <div id="cartdiv"><span id="cart"></span id="carttext"><a style="color:white; cursor:pointer; text-decoration:none;" href="card.html"><span>Cart</span></a><span id="cart_counter">0</span>
+        <div id="accdiv"><a id="si_btn" style="color:white; text-decoration:none; cursor:pointer; display: flex; gap: 5px;
+        align-items: center;" href="signin.html"><span id="account"></span><span id="acctext">Sign in / Sign up</span></a></div>
+        <div id="cartdiv"><a style="color:white; cursor:pointer; text-decoration:none;" href="card.html"><span id="cart"></a></span id="carttext"><a style="color:white; cursor:pointer; text-decoration:none;" href="card.html"><span id="cartspan">Cart</span></a><span id="cart_counter">0</span>
         </div>
     </div>
     <div class="lower">

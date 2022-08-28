@@ -759,3 +759,26 @@ footer h5 {
 .closeupsurf img:hover {
     transform: scale(0.9);
 }
+
+
+@media screen and (max-width: 1050px) {
+    .closeupsurf {
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: auto;
+       gap: 30px;
+       height: auto;
+       justify-items: center;
+    }
+  } 
+
+  @media screen and (max-width: 750px) {
+    .closeupsurf {
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: auto;
+       gap: 30px;
+       height: auto;
+       justify-items: center;
+    }
+  }
