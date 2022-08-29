@@ -1,33 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://www.jiomart.com/msassets/favicon.svg?v2">
-
     <title>cart</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <title>card</title>
-
-
-    <style>
-        .cart_active{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100vh;
-            background-color: rgba(100, 100, 100, 0.5);
-            z-index: 1000000;
-        }
-    </style>
-
+ 
     <!-- <style>
         nav {
             position: fixed;
@@ -35,23 +15,22 @@
             z-index: 1000;
         }
     </style> -->
-
+ 
     <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <!-- <link rel="stylesheet" href="styles/footer.css"> -->
     <link rel="stylesheet" href="styles/header.css">
-
-
+ 
+ 
 </head>
-
+ 
 <body>
-
     <div class="header">
     </div>
-
+ 
     <nav></nav>
-
-
-
+ 
+ 
+ 
     <div id="container">
         <div class="card-title">
             <div id="card-count">
@@ -63,7 +42,7 @@
                         <span>Your
                             cart</span>
                     </li>
-                    <li> <img src="	https://www.jiomart.com/msassets/images/icons/orders_review_inactive.svg" alt="">
+                    <li> <img src=" https://www.jiomart.com/msassets/images/icons/orders_review_inactive.svg" alt="">
                         <span> order Summary</span>
                     </li>
                     <li><img src="https://www.jiomart.com/msassets/images/icons/payment_inactive.svg" alt="">
@@ -72,72 +51,27 @@
                 </ul>
             </div>
         </div>
-
+ 
         <div class="container-boxleft">
-
-
-    <!-- <div class="header">
-    </div> -->
-    
-    <div id="loading_screen" class="cart_active">
-        <div class="text-center">
-            <div class="spinner-border" style="width: 3rem; height: 3rem; color: aliceblue;" role="status">
-              <span class="visually-hidden">Loading...</span>
-            </div>
-          </div>
-    </div>
-
-    <nav></nav>
-
-    <div id="container">
-        <div class="card-title">
-            <div id="card-count">
-                <h2>My Card (<span id="total_items"></span>)</h2>
-            </div>
-            <div id="order-status">
-                <ul>
-                    <li><img src="https://www.jiomart.com/msassets/images/icons/cart_blue_active.svg" alt="">
-                        <span>Your
-                            card</span>
-                    </li>
-                    <li> <img src="	https://www.jiomart.com/msassets/images/icons/orders_review_inactive.svg" alt="">
-                        <span> order Summary</span>
-                    </li>
-                    <li><img src="https://www.jiomart.com/msassets/images/icons/payment_inactive.svg" alt="">
-                        <span>Payment</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="container-boxleft">
-
-
+ 
             <div class="cart-product">
                 <div class="cart-product-name">
                     <div class="product-name">
                         <h3>Basket</h3>
-
                     </div>
                     <div class="amount">
                         <h3 id="available-amt"></h3>
                     </div>
-
-                    </div>
-                    <div class="amount">
-                        <h3 id="available-amt"></h3>
-                    </div>
-
                 </div>
-
-
+ 
+ 
                 <div class="product-details">
                     <div class="product-itemsdetails">
                         <!-- <div class="product-img">
                             <img src="https://www.jiomart.com/images/product/75x75/490002339/closeup-everfresh-red-hot-triple-fresh-formula-toothpaste-80-g-product-images-o490002339-p490002339-0-202203170622.jpg"
                                 alt="">
                         </div>
-
+ 
                         <div class='product-itemsName'>
                             <h4>Closeup Everfresh+ Red Hot Triple Fresh Formula Toothpaste 80 g</h4>
                             <div>
@@ -147,84 +81,68 @@
                                     <span id="save-price">You Save ₹4.00</span>
                                 </div>
                                 <div class="product-qty">
-
+ 
                                     <span><img src="https://www.jiomart.com/msassets/images/icons/minus-bulecolor.svg"
                                             alt=""></span>
                                     <span id="qty">1</span>
                                     <span><img src="https://www.jiomart.com/msassets/images/icons/plus-bluecolor.svg"
                                             alt=""></span>
                                 </div>
-
+ 
                             </div>
                         </div> -->
                     </div>
                     <!-- <hr> -->
                 </div>
-
-
-
+ 
+ 
+ 
             </div>
-
-
-
+ 
+ 
             <div id="container-boxRight">
-
-
-
-
-            <div id="container-boxRight">
-
-
+ 
                 <!-- <div class="dis-Coupon"> -->
                 <div id="applypromo">
-
+ 
                     <div>
                         <h4>Apply Coupon</h4>
-
                         <!-- <span><a href="#">VIEW ALL</a></span> -->
                     </div>
-
+ 
                     <div id='coupon-box'>
                         <img id="cimg" src="https://www.jiomart.com/msassets/images/icons/offer-grey.svg" alt="">
                         <input id="cCode" type="text" placeholder="Enter Your Coupon Code">
-                        <button onclick="checkCoupon()" id="couponApply">APPLY</button>
+                        <button id="couponApply">APPLY</button>
                     </div>
                     <hr>
                     <!-- <div>
                             <p><a href="">Login In</a> to see best offers and cashback deals</p>
                         </div> -->
-
-
-                        <span><a href="#">VIEW ALL</a></span>
-                    </div>
-                    <div>
-                        <p><a href="">Login In</a> to see best offers and cashback deals</p>
-                    </div>
-
-
+ 
                 </div>
-
+ 
                 <!-- </div> -->
-
+ 
                 <div class="Payment-box">
-
-
+ 
+ 
                     <div id="payment-detials">
                         <h4>Payment Detials</h4>
-
+ 
                         <div>
                             <label> MRP Total</label>
                             <span class="span-right" id="mrp">0</span>
                             <hr>
                         </div>
-
+ 
                         <div>
-
+ 
                             <label>Product Discount</label>
                             <span class="span-right" id="dis-Coupon">0</span>
                             <hr>
                         </div>
-
+ 
                         <div>
                             <span>Total Amount</span>
                             <span class="span-right" id="tota-price">0</span>
@@ -232,260 +150,294 @@
                         <div>
                             <label>You Save <span id="total-save">0</span></label>
                         </div>
-
+ 
                     </div>
-
+ 
                     <div id="checkOut-btn">
-
                         <button onclick="placeOrder()" id="btn-checkout">Place Order</button>
-
-                        <a href="review.html"> <button id="btn-checkout">Place Order</button></a>
-
                     </div>
                 </div>
-
-
+ 
+ 
             </div>
-
-
+ 
+ 
         </div>
-
-
-        <footer></footer>
-
-
+ 
+ 
+        <!-- <footer></footer> -->
+ 
+ 
 </body>
-
+ 
 </html>
-
+ 
 <script src="scripts/card.js"></script>
-
+ 
 <script type="module">
     import header from './scripts/header.js';
-    import footer from './scripts/footer.js';
-
-
+    // import footer from './scripts/footer.js';
+ 
+ 
+ 
+ 
+    let productDetails = document.querySelector('.product-details');
+ 
+    let availableAmt = document.getElementById('available-amt');
+ 
+    let mrp = document.getElementById('mrp');
+    let totalMRP = document.querySelector('#tota-price');
+ 
+ 
     let count = JSON.parse(localStorage.getItem("count")) || 0;
-    let footer_div = document.querySelector('footer');
+    // let footer_div = document.querySelector('footer');
     let nav = document.querySelector('nav');
-    
-
-
-    setTimeout(() => {
-            document.getElementById('loading_screen').style.display = "none";
-        }, 1500);
-
-
-    footer_div.innerHTML = footer();
+    let disAmount = document.getElementById('dis-Coupon');
+    let totalAmout = JSON.parse(localStorage.getItem('subTotal'));
+ 
+    let couponData = JSON.parse(localStorage.getItem("coupon"));
+ 
+    let saveTotal = document.getElementById('total-save');
+ 
+    if (couponData === null) {
+        disAmount.innerText = `₹${0}`;
+    } else {
+ 
+        let dc = couponData.disAmount;
+ 
+        let ta = couponData.totalAmout;
+        disAmount.innerText = `₹${dc}`;
+ 
+ 
+ 
+        saveTotal.innerText = `₹${dc}`;
+        totalMRP.innerText = `₹${ta}`;
+ 
+    }
+ 
+ 
+ 
+ 
+ 
+    let code = document.getElementById("cCode");
+ 
+    let totalPrice = document.getElementById('tota-price');
+ 
+ 
+ 
+ 
+ 
+ 
+    // footer_div.innerHTML = footer();
     nav.innerHTML = header();
     nav.style.width = "100%";
-    footer_div.style.width = "100%";
-
-
+    // footer_div.style.width = "100%";
+ 
     let display_pin = document.getElementById('pin');
-
+ 
     currentLocation();
-
+ 
     let count_display = document.getElementById('cart_counter');
     let cart_count;
-    let sibtn = document.getElementById('si_btn');
-    let sitext = document.getElementById('acctext');
-
-    let signUpData = JSON.parse(localStorage.getItem('signupData'));
-
-    if(signUpData !== null){
-    sitext.innerText = signUpData.firstname + signUpData.lastname;
-    sibtn.href = "accountdetails.html";
-}
-
-
+ 
     displayCount();
-
+ 
     function counter() {
         cart_count += 1;
         localStorage.setItem('count', JSON.stringify(cart_count));
         displayCount();
     }
-
+ 
     function displayCount() {
         cart_count = JSON.parse(localStorage.getItem('count')) || 0;
         count_display.innerText = +cart_count;
-        if (!count) availableAmt.innerText = "Cart is Empty.";
+        if (!count) {
+            availableAmt.innerText = "Cart is Empty.";
+            mrp.innerText = 0;
+            totalMRP.innerText = 0;
+ 
+        }
+ 
     }
-
-
+ 
+ 
     function currentLocation() {
         const options = {
             enableHighAccuracy: true,
             timeout: 5000,
             maximumAge: 0
         };
-
+ 
         async function success(pos) {
             const crd = pos.coords;
             // console.log(crd);
-
+ 
             let res = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${crd.latitude}&lon=${crd.longitude}&limit=5&appid=63c3704e63cc40d74ad87bdb9f68f3b8`);
             let data = await res.json();
             let city = data[0].name;
             // console.log(city)
-
+ 
             let res2 = await fetch(`https://api.postalpincode.in/postoffice/${city}`);
             let data2 = await res2.json();
             console.log(data2[0].PostOffice[0].Pincode)
             display_pin.innerText = data2[0].PostOffice[0].Pincode;
         }
-
-
+ 
+ 
         function error(err) {
             console.warn(`ERROR(${err.code}): ${err.message}`);
         }
-
+ 
         navigator.geolocation.getCurrentPosition(success, error, options);
     }
-
+ 
     //////////////////////////////////////////////////////////////////////////////////
-
-
+ 
+ 
     // count++;
-
+ 
     let data = JSON.parse(localStorage.getItem("jiomart")) || [];
     // let count_display = document.getElementById('cart_counter');
     // function displayCount() {
     //     count_display.innerText = count;
     //     // console.log(count);
     // }
-
-
+ 
+ 
     showCart();
     function showCart() {
         let data = JSON.parse(localStorage.getItem("jiomart")) || [];
         let total_items = document.getElementById('total_items');
         total_items.textContent = data.length;
     }
-
-    let productDetails = document.querySelector('.product-details');
-
-    let availableAmt = document.getElementById('available-amt');
-
-    let mrp = document.getElementById('mrp');
-    let totalMRP = document.querySelector('#tota-price');
-
-
-
+ 
+    // let productDetails = document.querySelector('.product-details');
+ 
+    // let availableAmt = document.getElementById('available-amt');
+ 
+    // let mrp = document.getElementById('mrp');
+    // let totalMRP = document.querySelector('#tota-price');
+ 
+ 
+ 
     function DisplayProducts() {
         productDetails.innerHTML = null;
         let data = JSON.parse(localStorage.getItem("jiomart")) || [];
-
-
+ 
+ 
         let total = 0;
-
+ 
         data.forEach(function (el) {
-
+ 
             total += (Number(el.price) * el.count);
             let sum = total.toFixed(2);
-
-
-
+ 
+ 
+ 
             localStorage.setItem('subTotal', JSON.stringify(sum));
-
+ 
             let productItems = document.createElement('div');
             productItems.setAttribute('class', 'product-itemsdetails');
-
+ 
             let product_img = document.createElement('div');
             product_img.setAttribute('class', 'product-img');
-
+ 
             let img = document.createElement('img');
             img.setAttribute('src', el.image);
-
+ 
             let productName = document.createElement('div');
             productName.setAttribute('class', 'product-itemsName');
-
+ 
             let title = document.createElement('h4');
             title.innerText = el.title;
-
+ 
             let productPrice = document.createElement('div');
             productPrice.setAttribute('class', 'product-itemsPrice');
-
+ 
             let price1 = document.createElement('span');
             price1.innerText = `₹${el.price * el.count}`
             let price2 = document.createElement('span');
             price2.innerText = el.price;
             let price3 = document.createElement('span');
             price3.innerText = el.price;
-
-
-
+ 
+ 
+ 
             let addRemoveBtn = document.createElement('div');
             addRemoveBtn.setAttribute('class', 'product-qty');
-
+ 
             let removeBtn = document.createElement('span');
             let img1 = document.createElement('img');
             img1.src = 'https://www.jiomart.com/msassets/images/icons/minus-bulecolor.svg';
-
-
+ 
+ 
             removeBtn.addEventListener('click', function () {
                 removeCount(el.id);
             });
-
-
+ 
+ 
             let count = document.createElement('span');
             count.setAttribute("id", "showCount3");
             count.innerText = el.count;
             // document.getElementById("showCount3").innerText = ele.count;
-
+ 
             let addBtn = document.createElement('span');
             addBtn.addEventListener('click', function () {
                 addCount(el.id);
             });
-
-
+ 
+ 
             let img2 = document.createElement('img');
             img2.src = "https://www.jiomart.com/msassets/images/icons/plus-bluecolor.svg"
             let div = document.createElement('div');
             let hr = document.createElement('hr');
-
+ 
             productPrice.append(price1);
             productName.append(title, productPrice, addRemoveBtn);
             product_img.append(img);
-
-
+ 
+ 
             removeBtn.append(img1);
             addBtn.append(img2);
             addRemoveBtn.append(removeBtn, count, addBtn);
-
+ 
             div.append(hr)
-
-
+ 
+ 
             productItems.append(product_img, productName,);
-
+ 
             productDetails.append(productItems, div);
-
+ 
             availableAmt.textContent = `₹${sum}`
             mrp.textContent = `₹${sum}`
             totalMRP.textContent = `₹${sum}`
-
+ 
             // total_items.innerText = count;
-
+ 
         });
     }
-
-
-
+ 
+ 
+ 
     DisplayProducts();
-
-
+ 
+ 
     function addCount(id) {
+ 
+        if (couponData != null) {
+            updateCode()
+        }
+ 
         let data = JSON.parse(localStorage.getItem("jiomart")) || [];
         let index = null;
-
+ 
         for (let i = 0; i < data.length; i++) {
             if (data[i].id == id) {
                 ``
                 index = i;
             }
         }
-
+ 
         if (index !== null && data[index].count < 5) {
             data[index].count++;
             count++;
@@ -497,20 +449,28 @@
         } else {
             alert("Max");
         }
-
-
-
+ 
+ 
+ 
         // console.log(1)
     }
-
-
-
-
+ 
+ 
+ 
+ 
+ 
     function removeCount(id) {
+ 
+        if (couponData != null) {
+            updateCode()
+        }
+ 
+ 
+ 
         let data = JSON.parse(localStorage.getItem("jiomart")) || [];
         let index = null;
-
-
+ 
+ 
         for (let i = 0; i < data.length; i++) {
             if (data[i].id == id) {
                 data[i].count--;
@@ -520,87 +480,86 @@
                 break;
             }
         }
-
+ 
         if (index !== null && data[index].count <= 0) {
             data.splice(index, 1);
         }
-
+ 
         localStorage.setItem('jiomart', JSON.stringify(data));
         DisplayProducts();
         showCart()
         displayCount();
-
-
-
+ 
+ 
+ 
     }
-
+ 
     // if (data.length == 0) {
-
+ 
     // }
-
-
-
+ 
+ 
+ 
     // coupon code //
-
-    let totalAmout = JSON.parse(localStorage.getItem('subTotal'));
-
-    // console.log(totalAmout * (0.3))
-
-    let couponData = JSON.parse(localStorage.getItem("coupon"));
-    let dc = couponData.disAmount;
-
-    let ta = couponData.totalAmout;
-
-
-    let disCoupon = document.getElementById('dis-Coupon');
-    disCoupon.innerText = `₹${dc}`;
-
-    let saveTotal = document.getElementById('total-save');
-    saveTotal.innerText = `₹${dc}`;
-
+ 
+ 
+ 
+    ////////////////
+ 
+ 
+ 
+ 
+ 
     // let totalMRP = document.querySelector('#tota-price');
-    totalMRP.innerText = `₹${ta}`;
-
-
+ 
+ 
+    document.getElementById('couponApply').addEventListener('click', checkCoupon);
+ 
     function checkCoupon() {
-
-        let code = document.getElementById("cCode");
-        let disAmount = document.getElementById('dis-Coupon');
-        let totalPrice = document.getElementById('tota-price');
-
-
+ 
+        // console.log("hell")
+ 
+ 
+ 
+ 
         if (code.value === "masai30") {
-
-            let dis = Math.floor(totalAmout * (0.3));
-            let tp = Math.floor((0.7) * totalAmout);
-
-            disAmount.innerHTML = `₹${dis}`
-            totalPrice.textContent = `₹${tp}`;
-
-            let coupon = {
-                disAmount: dis,
-                totalAmout: tp
-            }
-
-            localStorage.setItem('coupon', JSON.stringify(coupon));
-
+ 
+            updateCode();
             alert('Coupon Applied Successfully');
-
-        } else {
+        }
+ 
+        else {
             alert("This Code is Not Valid");
         }
-
+ 
     }
-
-
-
+ 
+    function updateCode() {
+ 
+        let dis = Math.floor(totalAmout * (0.3));
+        let tp = Math.floor((0.7) * totalAmout);
+ 
+        disAmount.innerText = `₹${dis}`
+        totalPrice.textContent = `₹${tp}`;
+ 
+        let coupon = {
+            disAmount: dis,
+            totalAmout: tp
+        }
+ 
+        localStorage.setItem('coupon', JSON.stringify(coupon));
+ 
+ 
+    }
+ 
     function placeOrder() {
         // let disAmount = document.getElementById("dis-Coupon");
         // let totalPrice = document.getElementById("totalPrice");
-
-
+ 
+ 
         window.location.href = "review.html"
     }
-
-
+ 
+ 
 </script>
+
