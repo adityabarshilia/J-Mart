@@ -180,6 +180,8 @@
  
  
  
+let signUpData = JSON.parse(localStorage.getItem('signupData'));
+
  
     let productDetails = document.querySelector('.product-details');
  
@@ -201,6 +203,7 @@
  
    displayAm();
 
+ 
 
    function displayAm(){
     couponData = JSON.parse(localStorage.getItem("coupon"));
@@ -243,6 +246,15 @@
     let display_pin = document.getElementById('pin');
  
     currentLocation();
+
+    let sibtn = document.getElementById('si_btn');
+    let sitext = document.getElementById('acctext');
+
+   if(signUpData !== null){
+    sitext.innerText = signUpData.firstname + signUpData.lastname;
+    sibtn.href = "accountdetails.html";
+}
+
  
     let count_display = document.getElementById('cart_counter');
     let cart_count;
@@ -262,7 +274,7 @@
             availableAmt.innerText = "Cart is Empty.";
             mrp.innerText = 0;
             totalMRP.innerText = 0;
- 
+            count_display.style.display = "none";
         }
  
     }
