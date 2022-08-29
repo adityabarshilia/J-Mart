@@ -261,3 +261,42 @@ function placeOrder() {
 
     window.location.href = "review.html"
 }
+
+
+document.getElementById("couponApply").addEventListener("click", function(){
+    console.log("count");
+    checkCoupon();
+})
+
+
+
+function checkCoupon() {
+
+    let code = document.getElementById("cCode");
+    let disAmount = document.getElementById('dis-Coupon');
+    let totalPrice = document.getElementById('tota-price');
+    
+
+    if (code.value === "masai30") {
+
+        let dis = Math.floor(totalAmout * (0.3));
+        let tp = Math.floor((0.7) * totalAmout);
+
+        disAmount.innerHTML = `₹${dis}`
+        totalPrice.textContent = `₹${tp}`;
+
+        let coupon = {
+            disAmount: dis,
+            totalAmout: tp
+        }
+
+        localStorage.setItem('coupon', JSON.stringify(coupon));
+
+        alert('Coupon Applied Successfully');
+
+    } else {
+        alert("This Code is Not Valid");
+    }
+    alert("This Code is Not Valid");
+}
+}
