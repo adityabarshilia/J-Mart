@@ -11,30 +11,35 @@ totalMrp.innerText = `₹${totalAmout}`;
 
 let finalAmount = document.getElementById('totalMrp');
 
-finalAmount.innerText = `₹${totalAmout}`
+
 
 
 
 
 //    coupon
 
-
 let couponData = JSON.parse(localStorage.getItem("coupon"));
-let dc = couponData.disAmount;
+let disCoupon = document.getElementById("dis-Coupon");
+let saveTotal = document.getElementById("total-save");
+let dc, ta;
 
-let ta = couponData.totalAmout;
-
-console.log(ta)
-
-
-let disCoupon = document.getElementById('dis-Coupon');
-disCoupon.innerText = `₹${dc}`;
-
-let saveTotal = document.getElementById('total-save');
-saveTotal.innerText = `₹${dc}`;
-
-let totalMRP = document.querySelector('#totalMrp');
-totalMRP.innerText = `₹${ta}`;
+if (couponData !== null) {
+    dc = couponData.disAmount;
+  
+     ta = couponData.totalAmout;
+  
+  //   console.log(disCoupon)
+    disCoupon.innerText = `₹${dc}`;
+  
+    saveTotal.innerText = `₹${dc}`;saveTotal.innerText = `₹${dc}`;
+  
+    // let totalMRP = document.querySelector('#tota-price');
+    finalAmount.innerText = `₹${ta}`;
+  }else{
+      disCoupon.innerText = `₹0`;
+      saveTotal.innerText = `₹0`;
+      finalAmount.innerText = `₹${totalAmout}`
+  }
 
 setTimeout(() => {
     document.getElementById('loading_screen').style.display = "none";
