@@ -128,7 +128,7 @@
  
  
                     <div id="payment-detials">
-                        <h4>Payment Detials</h4>
+                        <h4>Payment Details</h4>
  
                         <div>
                             <label> MRP Total</label>
@@ -154,7 +154,7 @@
                     </div>
  
                     <div id="checkOut-btn">
-                        <button onclick="placeOrder()" id="btn-checkout">Place Order</button>
+                        <a href="review.html"><button id="btn-checkout">Place Order</button></a>
                     </div>
                 </div>
  
@@ -199,13 +199,19 @@
  
     let saveTotal = document.getElementById('total-save');
  
+   displayAm();
+
+
+   function displayAm(){
+    couponData = JSON.parse(localStorage.getItem("coupon"));
     if (couponData === null) {
         disAmount.innerText = `₹${0}`;
     } else {
  
         let dc = couponData.disAmount;
- 
+ console.log(dc)
         let ta = couponData.totalAmout;
+        console.log(ta)
         disAmount.innerText = `₹${dc}`;
  
  
@@ -214,6 +220,7 @@
         totalMRP.innerText = `₹${ta}`;
  
     }
+   }
  
  
  
@@ -221,7 +228,7 @@
  
     let code = document.getElementById("cCode");
  
-    let totalPrice = document.getElementById('tota-price');
+    // let totalPrice = document.getElementById('tota-price');
  
  
  
@@ -373,6 +380,9 @@
  
             removeBtn.addEventListener('click', function () {
                 removeCount(el.id);
+                if (couponData != null) {
+            updateCode()
+        }
             });
  
  
@@ -384,6 +394,9 @@
             let addBtn = document.createElement('span');
             addBtn.addEventListener('click', function () {
                 addCount(el.id);
+                if (couponData != null) {
+            updateCode()
+        }
             });
  
  
@@ -424,9 +437,9 @@
  
     function addCount(id) {
  
-        if (couponData != null) {
-            updateCode()
-        }
+        // if (couponData != null) {
+        //     updateCode()
+        // }
  
         let data = JSON.parse(localStorage.getItem("jiomart")) || [];
         let index = null;
@@ -461,9 +474,9 @@
  
     function removeCount(id) {
  
-        if (couponData != null) {
-            updateCode()
-        }
+        // if (couponData != null) {
+        //     updateCode()
+        // }
  
  
  
@@ -520,7 +533,11 @@
         // console.log("hell")
  
  
- 
+        couponData = JSON.parse(localStorage.getItem("coupon"));
+
+        if(couponData !== null){
+            return alert("You have already used the coupon!");
+        }
  
         if (code.value === "masai30") {
  
@@ -535,20 +552,20 @@
     }
  
     function updateCode() {
- 
+        totalAmout = JSON.parse(localStorage.getItem("subTotal"));
         let dis = Math.floor(totalAmout * (0.3));
         let tp = Math.floor((0.7) * totalAmout);
  
         disAmount.innerText = `₹${dis}`
-        totalPrice.textContent = `₹${tp}`;
- 
+        totalMRP.textContent = `₹${tp}`;
+
         let coupon = {
             disAmount: dis,
             totalAmout: tp
         }
- 
+    //   console.log(coupon.totalAmout);
         localStorage.setItem('coupon', JSON.stringify(coupon));
- 
+        displayAm();
  
     }
  

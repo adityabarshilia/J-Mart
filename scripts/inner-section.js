@@ -12,6 +12,7 @@ let display_pin = document.getElementById('pin');
 
 let count_display = document.getElementById('cart_counter');
 let cart_count;
+let signUpData = JSON.parse(localStorage.getItem('signupData'));
 
 displayCount();
 currentLocation();
