@@ -76,6 +76,7 @@ function displayCount(){
     }else{
         count_display.style.display = "none";
     }
+    
 }
 
 function currentLocation(){
